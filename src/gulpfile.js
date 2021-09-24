@@ -41,7 +41,7 @@ const destPath = {
 }
 
 // WordPress反映用
-const themeName = "WordPressTheme"; // WordPress theme name
+const themeName = "codeUps__team-3"; // WordPress theme name
 const destWpPath = {
 	css: `../${themeName}/assets/css/`,
 	js: `../${themeName}/assets/js/`,
