@@ -1,0 +1,7 @@
+.p-blog__contents {
+
+  @include mq(tab) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

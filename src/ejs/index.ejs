@@ -11,8 +11,10 @@
       <%- include('./parts/_c-btn',{text:'＊＊test＊＊test', link:'#'}) %>
     <% } %>
 
-    <% for (var i=1; i <= 3; i++) { %> 
-      <%- include('./parts/_c-blog-card',{
+    <div class="p-blog__contents">
+      <% for (var i=1; i <= 3; i++) { %> 
+        <%- include('./parts/_c-blog-card',{
+        link:'#',
         img:'./images/common/blog-img01.jpg',
         img__alt:'rectangle',
         blog__title:'タイトルが入ります。タイトルが入ります。',
@@ -22,6 +24,7 @@
         date2:'2021.07.20'
       }) %> 
     <% } %> 
-
+  </div><!-- /.blog__contents -->
+    
   </body>
 </html>

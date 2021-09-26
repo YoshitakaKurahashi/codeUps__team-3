@@ -1,11 +1,13 @@
-<div class="p-blog-card">
-  <div class="p-blog-card__img"><img src="<%= img %> " alt="<%= img__alt %> "></div><!-- /.p-blog-card__img -->
-  <div class="p-blog-card__contents">
-    <div class="p-card-content__title"><%= blog__title %> </div><!-- /.p-card-content__title -->
-    <p class="p-card-content__text"><%= blog__text %> </p><!-- /.p-card-content__text -->
-    <div class="p-card-content__info">
-      <div class="p-card-info__category"><%= blog__category %> </div><!-- /.p-card-info__category -->
-      <time class="p-card-info__day" datetime="<%= date1 %> "><%= date2 %> </time><!-- /.p-card-info__day -->
-    </div><!-- /.p-card-content__info -->
-  </div><!-- /.p-blog-card__contents -->
-</div><!-- /.p-blog-card -->
+<div class="l-blog-card">
+  <a href="<% link %>" class="c-blog-card">
+    <div class="c-blog-card__img"><img src="<%= img %> " alt="<%= img__alt %> "></div><!-- /.c-blog-card__img -->
+    <div class="c-blog-card__contents c-card-content">
+      <div class="c-card-content__title"><%= blog__title %> </div><!-- /.c-card-content__title -->
+      <p class="c-card-content__text"><%= blog__text %> </p><!-- /.c-card-content__text -->
+      <div class="c-card-content__info">
+        <div class="c-card-info__category"><%= blog__category %> </div><!-- /.c-card-info__category -->
+        <time class="c-card-info__day" datetime="<%= date1 %> "><%= date2 %> </time><!-- /.c-card-info__day -->
+      </div><!-- /.c-card-content__info -->
+    </div><!-- /.c-blog-card__contents -->
+  </a><!-- /.c-blog-card -->
+</div><!-- /.l-blog-card -->

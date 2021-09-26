@@ -578,6 +578,12 @@ summary {
 
 /* Remove all animations and transitions for people that prefer not to see them */
 
+.l-blog-card {
+	margin: auto;
+	max-width: 33.75rem;
+	width: 100%;
+}
+
 .l-inner {
 	height: inherit;
 	margin: 0 auto;
@@ -585,6 +591,74 @@ summary {
 	padding-left: 20px;
 	padding-right: 20px;
 	width: 100%;
+}
+
+.c-blog-card {
+	background: #ffffff;
+	display: block;
+	transition: all 0.5s ease;
+}
+
+.c-blog-card:hover {
+	background: #333333;
+}
+
+.c-blog-card:hover .c-card-content__title,
+.c-blog-card:hover .c-card-content__text,
+.c-blog-card:hover .c-card-info__day {
+	color: #ffffff;
+}
+
+.c-blog-card__img {
+	width: 100%;
+}
+
+.c-blog-card__img img {
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.c-card-content {
+	padding: 0.25rem 1.4375rem 1rem;
+	text-align: left;
+	transition: all 0.5s ease;
+}
+
+.c-card-content__title {
+	font-size: 1.125rem;
+	font-weight: 500;
+	letter-spacing: 0.0625rem;
+	line-height: 1.94444;
+	margin-bottom: 0.25rem;
+}
+
+.c-card-content__text {
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 1.85714;
+	margin-bottom: 0.1875rem;
+}
+
+.c-card-content__info {
+	align-items: center;
+	display: flex;
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 1.85714;
+}
+
+.c-card-info__category {
+	background: #ffea2e;
+	margin-right: auto;
+	max-width: 67px;
+	text-align: center;
+	width: 100%;
+}
+
+.c-card-info__day {
+	transition: all 0.5s ease;
 }
 
 .c-btn {
@@ -644,6 +718,16 @@ html {
 	font-size: 1.6vw;
 }
 
+.l-blog-card {
+	margin: 0;
+	max-width: 21.875rem;
+	width: 100%;
+}
+
+.l-blog-card:not(:last-child) {
+	margin-right: 1.25rem;
+}
+
 .l-inner {
 	max-width: 1050px;
 	padding-left: 25px;
@@ -653,6 +737,11 @@ html {
 .c-test {
 	color: green;
 	font-size: 3.125rem;
+}
+
+.p-blog__contents {
+	display: flex;
+	justify-content: space-between;
 }
 
 .p-test {

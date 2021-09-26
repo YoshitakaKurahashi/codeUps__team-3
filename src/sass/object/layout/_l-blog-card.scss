@@ -1,0 +1,15 @@
+.l-blog-card {
+  max-width: rem(540);
+  width: 100%;
+  margin: auto;
+
+  @include mq(tab) {
+    max-width: rem(350);
+    width: 100%;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: rem(20);
+    }
+  }
+}
