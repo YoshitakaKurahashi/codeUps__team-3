@@ -1,0 +1,45 @@
+.p-footer {
+padding: rem(48) 0;
+
+}
+
+.p-footer__logo {
+  a {
+    display: block;
+    width: rem(70);
+    margin: auto;
+    margin-bottom: rem(8);
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.p-footer__nav {
+letter-spacing: 1.2px;
+text-align: center;
+margin-bottom: rem(32);
+}
+
+.p-footer-nav__lists {
+
+}
+
+.p-footer-nav__list {
+
+  &:not(:last-child) {
+    margin-bottom: rem(8);
+  }
+  a {
+
+
+  }
+}
+
+.p-footer__copyright {
+text-align: center;
+font-size: rem(11);
+letter-spacing: 1.2px;
+  small {
+  }
+}
