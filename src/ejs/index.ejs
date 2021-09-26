@@ -4,8 +4,6 @@
   <body>
     <%- include('./common/_top-header') %>
       <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
-    <%- include('./common/_footer') %>
-
 
     <% for (var i=0; i < 3; i++) { %>
       <%- include('./parts/_c-btn',{text:'＊＊test＊＊test', link:'#'}) %>
@@ -25,6 +23,9 @@
       }) %> 
     <% } %> 
   </div><!-- /.blog__contents -->
+
+  <%- include('./common/_footer') %>
+
     
   </body>
 </html>

@@ -1,0 +1,7 @@
+.l-footer {
+  padding: rem(48) $padding-sp;
+
+  @include mq(tab) {
+    padding: rem(32) rem(32) rem(26);
+  }
+}
