@@ -2,12 +2,32 @@
 <html lang="ja">
 <%- include('./common/_head') %>
   <body>
-    <%- include('./common/_top-header') %>
-      <%- include('./parts/_c-btn',{text:'これはテストです', link:'#'}) %>
 
-    <% for (var i=0; i < 3; i++) { %>
-      <%- include('./parts/_c-btn',{text:'＊＊test＊＊test', link:'#'}) %>
-    <% } %>
+      <%- include('./parts/_c-btn',{text:'詳しく見る', link:'#'}) %>
+      <%- include('./parts/_c-btn',{text:'すべて見る', link:'#'}) %>
+
+    
+      
+
+      
+      <div class="p-section-title">
+        <%- include('./parts/_c-section-title__english',{text:'Blog'}) %>
+        <%- include('./parts/_c-section-title__japanese',{text:'ブログ'}) %>
+      </div><!-- /p-section-title -->
+      <div class="p-section-title">
+        <%- include('./parts/_c-section-title__english',{text:'Overview'}) %>
+        <%- include('./parts/_c-section-title__japanese',{text:'企業概要'}) %>
+      </div><!-- /p-section-title -->
+      <div class="p-section-title">
+        <%- include('./parts/_c-section-title__english',{text:'Works'}) %>
+        <%- include('./parts/_c-section-title__japanese',{text:'制作実績'}) %>
+      </div><!-- /p-section-title -->
+      <div class="p-section-title">
+        <%- include('./parts/_c-section-title__english',{text:'Content'}) %>
+        <%- include('./parts/_c-section-title__japanese',{text:'事業内容'}) %>
+      </div><!-- /p-section-title -->
+   
+      <%- include('./parts/_c-text',{text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
 
     <div class="p-blog__contents">
       <% for (var i=1; i <= 3; i++) { %> 
@@ -15,14 +35,31 @@
         link:'#',
         img:'./images/common/blog-img01.jpg',
         img__alt:'rectangle',
-        blog__title:'タイトルが入ります。タイトルが入ります。',
-        blog__text:'説明文が入ります。説明文が入ります。説明文が入ります。',
-        blog__category:'カテゴリ',
+        blog__title:'タイトルが入ります。',
+        blog__text:'説明文が入ります。説明文が入ります。',
+        blog__category:'カゴリ',
         date1:'2021-07-20',
         date2:'2021.07.20'
       }) %> 
     <% } %> 
   </div><!-- /.blog__contents -->
+
+  <div class="p-contact l-contact">
+    <div class="p-contact__inner l-inner">
+      <div class="p-section-title">
+        <%- include('./parts/_c-section-title__english',{text:'Contact'}) %>
+        <%- include('./parts/_c-section-title__japanese',{text:'お問い合わせ'}) %>
+      </div><!-- /p-section-title -->
+      <div class="p-contact__text">
+        <%- include('./parts/_c-text',{text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
+      </div><!-- /p-contact__text -->
+      <div class="p-contact__btn">
+        <%- include('./parts/_c-btn',{text:'お問い合わせへ', link:'#'}) %>
+      </div><!-- /p-contact__btn -->
+    </div><!-- /p-contact__inner -->
+  </div><!-- /p-contact -->
+
+
 
   <%- include('./common/_footer') %>
 

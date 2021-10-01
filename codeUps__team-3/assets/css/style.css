@@ -667,14 +667,59 @@ summary {
 }
 
 .c-btn {
-	background-color: black;
-	color: white;
-	padding: 0.625rem 2.5rem;
+	background: #333333;
+	border: 0.0625rem solid #FFFFFF;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: block;
+	font-size: 1.25rem;
+	letter-spacing: 0.125rem;
+	margin: 0 auto;
+	max-width: 20.9375rem;
+	padding: 0.6875rem 0;
+	text-align: center;
+	width: 100%;
+}
+
+.c-section-title__english {
+	color: #F9F871;
+	font-family: "Noto Serif JP", serif;
+	font-size: 3.125rem;
+	font-weight: 400;
+	letter-spacing: 0.125rem;
+	opacity: 0.27;
+}
+
+.c-section-title__japanese {
+	bottom: 0;
+	font-size: 1.25rem;
+	font-weight: 400;
+	left: 50%;
+	letter-spacing: 0.125rem;
+	position: absolute;
+	transform: translateX(-50%);
 }
 
 .c-test {
 	color: red;
 	font-size: 1.25rem;
+}
+
+.c-text {
+	letter-spacing: 0.125rem;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 37.5rem;
+	width: 100%;
+}
+
+.p-contact {
+	background-color: #3D3D3D;
+	padding: 1.25rem 0 4.0625rem;
+}
+
+.p-contact__text {
+	padding: 1.25rem 0 2.5rem;
 }
 
 .p-footer__contents {
@@ -709,6 +754,11 @@ summary {
 .p-footer__copyright small {
 	font-size: 0.6875rem;
 	letter-spacing: 1.2px;
+}
+
+.p-section-title {
+	position: relative;
+	text-align: center;
 }
 
 .p-test {
@@ -775,6 +825,38 @@ html {
 	max-width: 1150px;
 	padding-left: 25px;
 	padding-right: 25px;
+}
+
+.c-btn {
+	font-size: 1rem;
+	max-width: 22.5rem;
+	overflow: hidden;
+	padding: 0.9375rem 0;
+	position: relative;
+	width: 100%;
+}
+
+.c-btn::before {
+	background-color: #FFFFFF;
+	content: "";
+	display: inline-block;
+	height: 100%;
+	left: -100%;
+	position: absolute;
+	top: 0;
+	transition: .3s;
+	width: 100%;
+	z-index: -1;
+}
+
+.c-btn:hover {
+	border: 0.0625rem solid transparent;
+	color: #333333;
+	z-index: 10;
+}
+
+.c-btn:hover::before {
+	left: 0;
 }
 
 .c-test {

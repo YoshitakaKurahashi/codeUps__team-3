@@ -1,5 +1,53 @@
 .c-btn {
-  padding: rem(10) rem(40);
-  background-color: black;
-  color: white;
+  margin: 0 auto;
+  display: block;
+  background: $btn-color;
+  max-width: rem(335);
+  width: 100%;
+  padding: rem(11) 0;
+  font-size: rem(20);
+  letter-spacing: rem(2);
+  color: $text-color;
+  cursor: pointer;
+  border: rem(1) solid $text-color;
+  text-align: center;
+
+  @include mq(tab) {
+      max-width: rem(360);
+      width: 100%;
+      font-size: rem(16);
+      padding: rem(15) 0;
+      position: relative;
+      overflow: hidden;
+  }
+}
+
+.c-btn::before {
+
+  @include mq(tab) {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: -100%;
+      background-color: $text-color;
+      transition: .3s;
+  }
+}
+
+.c-btn:hover {
+  @include mq(tab) {
+      z-index: 10;
+      color: $btn-color;
+      border: rem(1) solid transparent;        
+  }
+}
+
+.c-btn:hover::before {
+  @include mq(tab) {
+      left: 0;
+  }
 }
