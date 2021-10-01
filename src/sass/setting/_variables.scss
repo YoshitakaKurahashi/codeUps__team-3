@@ -1,12 +1,16 @@
 // 色
 $background: #111111; // 背景
 $text-color: #FFFFFF; // テキスト色
+$btn-color: #333333; //ボタンカラー
+$section-english: #F9F871; //セクションタイトル（英語）
+$background-color: #3D3D3D; //灰色の背景色
 
 // マウスホバー
 $opacity: 0.7; // 透過度
 
 // フォント
 $font-family-base: 'Noto Sans JP', sans-serif;// ベースフォント
+$font-family-sectionTitle: 'Noto Serif JP', serif; //セクションタイトル（英語）
 $font-size-base: 16px; // ベースフォントサイズ
 $font-weight-base: 400; // ベースフォントウェイト
 $lh: 1.6; // ベース行間
