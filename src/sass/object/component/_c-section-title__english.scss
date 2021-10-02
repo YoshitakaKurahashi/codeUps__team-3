@@ -5,4 +5,8 @@
     font-family: $font-family-sectionTitle;
     font-weight: 400;
     opacity: 0.27;
+
+    @include mq(tab) {
+        font-size: rem(110);
+    }
 }

@@ -1,4 +1,8 @@
 .p-section-title {
     position: relative;
     text-align: center;
+
+    @include mq(tab) {
+        text-align: left;
+    }
 }

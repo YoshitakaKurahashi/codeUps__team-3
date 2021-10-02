@@ -1,11 +1,19 @@
 .c-news__tag {
-    max-width: rem(100);
+    max-width: rem(99);
     width: 100%;
-    padding: rem(5) rem(21);
-    border: 1px solid $text-color;
+    padding: rem(5) rem(19);
+    border: rem(1) solid $text-color;
     font-size: rem(14);
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+
+    @include mq(tab) {
+        position: static;
+        transform: none;
+        margin-left: rem(48);
+       
+        
+    }
 }

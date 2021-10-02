@@ -1,0 +1,7 @@
+.p-news__title {
+    padding: rem(20) 0 rem(28);
+
+    @include mq(tab) {
+        padding: 0;
+    }
+}

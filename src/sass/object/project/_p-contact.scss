@@ -3,6 +3,11 @@
     padding: rem(20) 0 rem(65);
 }
 
+
 .p-contact__text {
     padding: rem(20) 0 rem(40);
+
+    @include mq(tab) {
+        // padding: rem(-10) 0 rem(60);
+    }
 }

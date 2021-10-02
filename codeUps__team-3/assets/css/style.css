@@ -681,20 +681,40 @@ summary {
 	width: 100%;
 }
 
+.c-news__btn {
+	background: #333333;
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: block;
+	font-size: 1.25rem;
+	letter-spacing: 0.125rem;
+	margin: 0 auto;
+	max-width: 20.9375rem;
+	padding: 0.6875rem 0;
+	text-align: center;
+	width: 100%;
+}
+
 .c-news__date {
+	font-size: 1rem;
 	padding-top: 0.3125rem;
 }
 
 .c-news__tag {
-	border: 1px solid #FFFFFF;
+	border: 0.0625rem solid #FFFFFF;
 	font-size: 0.875rem;
 	left: 50%;
-	max-width: 6.25rem;
-	padding: 0.3125rem 1.3125rem;
+	max-width: 6.1875rem;
+	padding: 0.3125rem 1.1875rem;
 	position: absolute;
 	top: 0;
 	transform: translateX(-50%);
 	width: 100%;
+}
+
+.c-news__title {
+	font-size: 1rem;
 }
 
 .c-section-title__english {
@@ -726,6 +746,11 @@ summary {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 37.5rem;
+	width: 100%;
+}
+
+.p-contact__container {
+	max-width: 68.75rem;
 	width: 100%;
 }
 
@@ -772,7 +797,14 @@ summary {
 	letter-spacing: 1.2px;
 }
 
-.p-news__text {
+.p-news__container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 37.5rem;
+	width: 100%;
+}
+
+.p-news__title {
 	padding: 1.25rem 0 1.75rem;
 }
 
@@ -879,6 +911,66 @@ html {
 	left: 0;
 }
 
+.c-news__btn {
+	background-color: #FFFFFF;
+	border: none;
+	color: #333333;
+	font-size: 1rem;
+	margin-left: 3rem;
+	max-width: 8.6875rem;
+	overflow: hidden;
+	padding: 0.3125rem 1.5rem;
+	position: relative;
+	width: 100%;
+}
+
+.c-news__btn::before {
+	background-color: #FFFFFF;
+	content: "";
+	display: inline-block;
+	height: 100%;
+	left: -100%;
+	position: absolute;
+	top: 0;
+	transition: .3s;
+	width: 100%;
+	z-index: -1;
+}
+
+.c-news__btn:hover {
+	color: #FFFFFF;
+	z-index: 10;
+}
+
+.c-news__btn:hover::before {
+	left: 0;
+}
+
+.c-news__date {
+	padding-top: 0;
+}
+
+.c-news__tag {
+	margin-left: 3rem;
+	position: static;
+	transform: none;
+}
+
+.c-news__title {
+	margin-left: 3.5rem;
+	max-width: initial;
+	max-width: 35.75rem;
+	padding-top: 0.3125rem;
+}
+
+.c-section-title__english {
+	font-size: 6.875rem;
+}
+
+.c-section-title__japanese {
+	font-size: 1.875rem;
+}
+
 .c-test {
 	color: green;
 	font-size: 3.125rem;
@@ -921,9 +1013,36 @@ html {
 	font-size: 0.9375rem;
 }
 
+.p-news__container {
+	display: flex;
+	max-width: 65.125rem;
+	position: relative;
+	vertical-align: middle;
+}
+
+.p-news__date {
+	padding-top: 0.3125rem;
+}
+
+.p-news__title {
+	padding: 0;
+}
+
+.p-section-title {
+	text-align: left;
+}
+
 .p-test {
 	color: green;
 	font-size: 3.125rem;
+}
+
+}
+
+@media screen and (min-width: 768px) and (min-width: 768px) {
+
+.c-news__btn::before {
+	background-color: #333333;
 }
 
 }

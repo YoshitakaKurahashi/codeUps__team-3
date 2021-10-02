@@ -1,3 +1,8 @@
 .c-news__date {
     padding-top: rem(5);
+    font-size: rem(16);
+
+    @include mq(tab) {
+        padding-top: 0;
+    }
 }

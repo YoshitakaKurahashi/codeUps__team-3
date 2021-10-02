@@ -1,0 +1,60 @@
+.c-news__btn {
+    margin: 0 auto;
+    display: block;
+    background: $btn-color;
+    max-width: rem(335);
+    width: 100%;
+    padding: rem(11) 0;
+    font-size: rem(20);
+    letter-spacing: rem(2);
+    border: 1px solid $text-color;
+    color: $text-color;
+    cursor: pointer;
+    text-align: center;
+
+    @include mq(tab) {
+        max-width: rem(139);
+        width: 100%;
+        font-size: rem(16);
+        padding: rem(5) rem(24);
+        background-color: $text-color;
+        color: $btn-color;
+        position: relative;
+        overflow: hidden;
+        border: none;
+        margin-left: rem(48);
+    }
+  }
+  
+  .c-news__btn::before {
+  
+    @include mq(tab) {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        background-color: $text-color;
+        transition: .3s;
+
+        @include mq(tab) {
+            background-color: $btn-color;
+        }
+    }
+  }
+  
+  .c-news__btn:hover {
+    @include mq(tab) {
+        z-index: 10;
+        color: $text-color;   
+    }
+  }
+  
+  .c-news__btn:hover::before {
+    @include mq(tab) {
+        left: 0;
+    }
+  }
