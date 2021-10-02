@@ -1,0 +1,11 @@
+.c-news__tag {
+    max-width: rem(100);
+    width: 100%;
+    padding: rem(5) rem(21);
+    border: 1px solid $text-color;
+    font-size: rem(14);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

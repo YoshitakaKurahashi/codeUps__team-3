@@ -681,6 +681,22 @@ summary {
 	width: 100%;
 }
 
+.c-news__date {
+	padding-top: 0.3125rem;
+}
+
+.c-news__tag {
+	border: 1px solid #FFFFFF;
+	font-size: 0.875rem;
+	left: 50%;
+	max-width: 6.25rem;
+	padding: 0.3125rem 1.3125rem;
+	position: absolute;
+	top: 0;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
 .c-section-title__english {
 	color: #F9F871;
 	font-family: "Noto Serif JP", serif;
@@ -754,6 +770,10 @@ summary {
 .p-footer__copyright small {
 	font-size: 0.6875rem;
 	letter-spacing: 1.2px;
+}
+
+.p-news__text {
+	padding: 1.25rem 0 1.75rem;
 }
 
 .p-section-title {

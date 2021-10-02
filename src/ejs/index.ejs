@@ -3,8 +3,18 @@
 <%- include('./common/_head') %>
   <body>
 
+    <section class="l-news p-news">
+      <div class="l-news l-inner">
+        <%- include('./parts/_c-news__date',{text:'2020.07.20'}) %>
+        <%- include('./parts/_c-news__tag',{text:'お知らせ'}) %>
+        <div class="p-news__text">
+          <%- include('./parts/_c-text',{text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
+        </div><!-- /p-news__text -->
+        <%- include('./parts/_c-btn',{text:'すべて見る', link:'#'}) %>
+      </div><!-- /l-news -->
+    </section><!-- /l- -->
+
       <%- include('./parts/_c-btn',{text:'詳しく見る', link:'#'}) %>
-      <%- include('./parts/_c-btn',{text:'すべて見る', link:'#'}) %>
 
     
       
