@@ -175,11 +175,11 @@ input[type="submit"]::-webkit-search-decoration,
 input[type=reset]::-webkit-search-decoration,
 input[type="button"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-decoration {
-  display: none;
+	display: none;
 }
 
 ::-webkit-search-cancel-button {
-  -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 input[type="search"]::-webkit-search-decoration {
