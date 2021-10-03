@@ -65,6 +65,11 @@
       display: none;
     }
 
+    &:nth-child(4),
+    &:nth-child(7) {
+      display: block;
+    }
+
     &:not(:last-child) {
       margin-right: rem(34);
     }
