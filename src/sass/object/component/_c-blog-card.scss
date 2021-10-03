@@ -82,16 +82,19 @@
 
 .c-card-info__category {
   margin-right: auto;
-  max-width: 67px;
-  width: 100%;
+  // max-width: 70px;
+  // width: 100%;
   text-align: center;
   background: #ffea2e;
-  letter-spacing: 2.5px;
-  padding-left: 7px;
+  letter-spacing: rem(2.5);
+  padding-left: rem(7);
+  padding-right: rem(7);
+  display: inline-block;
+
   @include mq(tab) {
     letter-spacing: 1px;
-    padding-left: 3px;
-
+    padding-left: rem(3);
+    padding-right: rem(3);
   }
 }
 
