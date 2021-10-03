@@ -599,6 +599,7 @@ summary {
 
 .c-blog-card {
 	background: #ffffff;
+	color: #111111;
 	display: block;
 	transition: all 0.5s ease;
 }
@@ -635,8 +636,7 @@ summary {
 }
 
 .c-card-content {
-	color: #333333;
-	padding: 0.25rem 1.4375rem 1rem;
+	padding: 0.3125rem 1.4375rem 1rem;
 	text-align: left;
 	transition: all 0.5s ease;
 }
@@ -644,17 +644,17 @@ summary {
 .c-card-content__title {
 	font-size: 1.125rem;
 	font-weight: 500;
-	letter-spacing: 0.0625rem;
-	line-height: 1.94444;
-	margin-bottom: 0.25rem;
+	letter-spacing: 3px;
+	line-height: 35px;
+	margin-bottom: 3px;
 }
 
 .c-card-content__text {
 	font-size: 0.875rem;
 	font-weight: 400;
-	letter-spacing: 1px;
-	line-height: 1.85714;
-	margin-bottom: 0.1875rem;
+	letter-spacing: 3px;
+	line-height: 26px;
+	margin-bottom: 5px;
 }
 
 .c-card-content__info {
@@ -662,19 +662,21 @@ summary {
 	display: flex;
 	font-size: 0.875rem;
 	font-weight: 400;
-	letter-spacing: 1px;
-	line-height: 1.85714;
+	line-height: 26px;
 }
 
 .c-card-info__category {
 	background: #ffea2e;
+	letter-spacing: 2.5px;
 	margin-right: auto;
 	max-width: 67px;
+	padding-left: 7px;
 	text-align: center;
 	width: 100%;
 }
 
 .c-card-info__day {
+	letter-spacing: 2px;
 	transition: all 0.5s ease;
 }
 
@@ -853,6 +855,7 @@ html {
 	padding-right: 25px;
 }
 
+<<<<<<< HEAD
 .c-btn {
 	font-size: 1rem;
 	max-width: 22.5rem;
@@ -883,6 +886,24 @@ html {
 
 .c-btn:hover::before {
 	left: 0;
+=======
+.c-card-content__title {
+	letter-spacing: 1px;
+}
+
+.c-card-content__text {
+	letter-spacing: 1px;
+	margin-bottom: 11px;
+}
+
+.c-card-info__category {
+	letter-spacing: 1px;
+	padding-left: 3px;
+}
+
+.c-card-info__day {
+	letter-spacing: 1px;
+>>>>>>> blog-card
 }
 
 .c-test {
