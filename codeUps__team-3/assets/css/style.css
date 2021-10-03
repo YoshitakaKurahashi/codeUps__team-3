@@ -668,12 +668,12 @@ summary {
 
 .c-card-info__category {
 	background: #ffea2e;
-	letter-spacing: 2.5px;
+	display: inline-block;
+	letter-spacing: 0.15625rem;
 	margin-right: auto;
-	max-width: 67px;
-	padding-left: 7px;
+	padding-left: 0.4375rem;
+	padding-right: 0.4375rem;
 	text-align: center;
-	width: 100%;
 }
 
 .c-card-info__day {
@@ -867,7 +867,8 @@ html {
 
 .c-card-info__category {
 	letter-spacing: 1px;
-	padding-left: 3px;
+	padding-left: 0.1875rem;
+	padding-right: 0.1875rem;
 }
 
 .c-card-info__day {
