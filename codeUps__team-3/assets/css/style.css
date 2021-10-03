@@ -636,6 +636,7 @@ summary {
 }
 
 .c-card-content {
+	color: #333333;
 	padding: 0.3125rem 1.4375rem 1rem;
 	text-align: left;
 	transition: all 0.5s ease;
@@ -855,7 +856,24 @@ html {
 	padding-right: 25px;
 }
 
-<<<<<<< HEAD
+.c-card-content__title {
+	letter-spacing: 1px;
+}
+
+.c-card-content__text {
+	letter-spacing: 1px;
+	margin-bottom: 11px;
+}
+
+.c-card-info__category {
+	letter-spacing: 1px;
+	padding-left: 3px;
+}
+
+.c-card-info__day {
+	letter-spacing: 1px;
+}
+
 .c-btn {
 	font-size: 1rem;
 	max-width: 22.5rem;
@@ -886,24 +904,6 @@ html {
 
 .c-btn:hover::before {
 	left: 0;
-=======
-.c-card-content__title {
-	letter-spacing: 1px;
-}
-
-.c-card-content__text {
-	letter-spacing: 1px;
-	margin-bottom: 11px;
-}
-
-.c-card-info__category {
-	letter-spacing: 1px;
-	padding-left: 3px;
-}
-
-.c-card-info__day {
-	letter-spacing: 1px;
->>>>>>> blog-card
 }
 
 .c-test {
