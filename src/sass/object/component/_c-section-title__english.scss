@@ -1,12 +1,14 @@
 .c-section-title__english {
-    color: $section-english;
     font-size: rem(50);
     letter-spacing: rem(2);
-    font-family: $font-family-sectionTitle;
+    color: #F9F871;
+    opacity: 0.2;
+    font-family: "Noto Serif JP";
     font-weight: 400;
-    opacity: 0.27;
-
+    
+  
     @include mq(tab) {
-        font-size: rem(110);
+      font-size: rem(110);
+      line-height: .9;
     }
 }
