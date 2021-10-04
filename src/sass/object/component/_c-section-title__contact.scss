@@ -1,4 +1,4 @@
-.c-section-title__japanese {
+.c-section-title__contact {
     font-size: rem(20);
     letter-spacing: rem(2);
     position: absolute;
@@ -6,4 +6,9 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+
+    @include mq(tab) {
+        font-size: rem(30);
+        
+    }
 }

@@ -1,0 +1,14 @@
+.c-section-title__overview {
+    font-size: rem(20);
+    letter-spacing: rem(2);
+    position: absolute;
+    font-weight: 400;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include mq(tab) {
+        font-size: rem(30);
+        
+    }
+}
