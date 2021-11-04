@@ -597,6 +597,13 @@ summary {
 	width: 100%;
 }
 
+.l-pagination {
+	margin: auto;
+	max-width: 33.75rem;
+	padding-bottom: 7.5rem;
+	width: 100%;
+}
+
 .c-blog-card {
 	background: #ffffff;
 	color: #111111;
@@ -731,6 +738,55 @@ summary {
 
 .c-news__title {
 	font-size: 1rem;
+}
+
+.service-page {
+	background: #111111;
+	padding-top: 12.5rem;
+}
+
+.pagination {
+	align-items: center;
+	display: flex;
+}
+
+.pagination__link {
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	display: inline-block;
+	line-height: 1.375rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 0.75rem;
+	transition: all .3s ease;
+}
+
+.pagination__link--previous {
+	margin-right: 1.5rem;
+}
+
+.pagination__page {
+	border: 1px solid #ffffff;
+	display: inline-block;
+	line-height: 1rem;
+	margin-right: 1rem;
+	padding: 0.125rem 0.375rem 0.25rem 0.4375rem;
+	transition: all .3s ease;
+}
+
+.pagination__page:hover,
+.pagination__link:hover {
+	background: #ffffff;
+	color: #333333;
+}
+
+.pagination__page--current {
+	background: #ffffff;
+	color: #333333;
+}
+
+.pagination__link--next {
+	margin-left: 0.375rem;
 }
 
 .c-section-title__blog {

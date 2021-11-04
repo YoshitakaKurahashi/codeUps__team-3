@@ -1,0 +1,54 @@
+.service-page {
+  background: #111111;
+  padding-top: rem(200);
+} // これは後で消すか違う場所で記述する！
+
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+.pagination__link {
+  display: inline-block;
+  line-height: rem(22);
+  padding: 0 rem(12);
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: all .3s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pagination__link--previous {
+  margin-right: rem(24);
+}
+
+.pagination__page {
+  display: inline-block;
+  padding: rem(2) rem(6) rem(4) rem(7);
+  border: 1px solid #ffffff;
+  line-height: rem(16);
+  margin-right: rem(16);
+  transition: all .3s ease;
+}
+
+.pagination__page:hover,
+.pagination__link:hover {
+  color: #333333;
+  background: #ffffff;
+}
+
+.pagination__page--smaller {
+}
+
+.pagination__page--current {
+  color: #333333;
+  background: #ffffff;
+}
+
+.pagination__page--larger {
+}
+
+.pagination__link--next {
+  margin-left: rem(6);
+}
