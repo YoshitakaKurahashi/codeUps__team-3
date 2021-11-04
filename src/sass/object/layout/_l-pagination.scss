@@ -1,0 +1,11 @@
+.l-pagination {
+  max-width: rem(540);
+  width: 100%;
+  margin: auto;
+
+  margin-bottom: rem(120);
+
+  @include mq(md) {
+    margin-bottom: rem(150);
+  }
+}
