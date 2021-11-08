@@ -742,7 +742,6 @@ summary {
 
 .service-page {
 	background: #111111;
-	padding-top: 12.5rem;
 }
 
 .pagination {
@@ -941,6 +940,28 @@ summary {
 	position: relative;
 	text-align: center;
 	width: 100%;
+}
+
+.service-mainvisual {
+	background: url(/images/common/servicePage-MV.png) center center/cover;
+	background-repeat: no-repeat;
+	padding-top: 113.3%;
+	position: relative;
+	width: 100vw;
+	z-index: 1;
+}
+
+.page-title {
+	color: #FFFFFF;
+	font-size: 1.875rem;
+	font-weight: 700;
+	left: 50%;
+	letter-spacing: 0.125rem;
+	line-height: 2.7125rem;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
 }
 
 .p-test {
@@ -1250,6 +1271,22 @@ html {
 	margin: initial;
 	max-width: 68.75rem;
 	text-align: left;
+}
+
+.service-mainvisual {
+	background: url(/images/common/servicePage-MVPC.png) center center/cover;
+	padding-top: 28.9%;
+}
+
+.service-mainvisual::after {
+	background: rgba(17, 17, 17, 0.3);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2;
 }
 
 .p-test {
