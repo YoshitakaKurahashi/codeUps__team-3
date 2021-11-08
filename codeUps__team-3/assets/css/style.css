@@ -599,8 +599,8 @@ summary {
 
 .l-pagination {
 	margin: auto;
+	margin-bottom: 7.5rem;
 	max-width: 33.75rem;
-	padding-bottom: 7.5rem;
 	width: 100%;
 }
 
@@ -1007,6 +1007,10 @@ html {
 	max-width: 1150px;
 	padding-left: 25px;
 	padding-right: 25px;
+}
+
+.l-pagination {
+	margin-bottom: 9.375rem;
 }
 
 .c-card-content__title {

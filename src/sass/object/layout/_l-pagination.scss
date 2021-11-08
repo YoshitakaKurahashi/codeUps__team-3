@@ -5,7 +5,7 @@
 
   margin-bottom: rem(120);
 
-  @include mq(md) {
+  @include mq(tab) {
     margin-bottom: rem(150);
   }
 }
