@@ -2,6 +2,11 @@
 <html lang="ja">
   <%- include('./common/_head') %>
   <body class="service-page">
+    
+    <!-- 下層ページのMV -->
+    <%- include('./parts/_c-service-mv') %> 
+
+    <!-- ページネーション作成（プラグインwp-pagenaviを想定） -->
     <%- include('./parts/_c-pagination') %>
 
     <div class="p-contact l-contact">
