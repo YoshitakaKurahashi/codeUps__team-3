@@ -1,0 +1,26 @@
+.breadcrumbs {
+  margin-bottom: rem(85);
+}
+
+.breadcrumbs ul {
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  margin-right: rem(3);
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs a {
+  line-height: rem(19);
+  letter-spacing: rem(1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.breadcrumbs span {
+  display: inline-block;
+  margin-right: rem(3);
+}
