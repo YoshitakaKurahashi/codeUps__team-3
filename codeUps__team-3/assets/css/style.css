@@ -584,6 +584,10 @@ summary {
 	width: 100%;
 }
 
+.l-breadcrumbs {
+	margin-bottom: 5.3125rem;
+}
+
 .l-footer {
 	padding: 52px 20px 54px;
 }
@@ -686,10 +690,6 @@ summary {
 .c-card-info__day {
 	letter-spacing: 2px;
 	transition: all 0.5s ease;
-}
-
-.breadcrumbs {
-	margin-bottom: 5.3125rem;
 }
 
 .breadcrumbs li {
@@ -987,6 +987,55 @@ summary {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 10;
+}
+
+.service__title {
+	font-size: 1.25rem;
+	letter-spacing: 0.125rem;
+	line-height: 1.8125rem;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.service__lead {
+	letter-spacing: 0.125rem;
+	line-height: 1.45rem;
+	margin: auto;
+	margin-bottom: 5rem;
+	max-width: 33.75rem;
+	width: 100%;
+}
+
+.sub-policy {
+	margin-bottom: 3rem;
+}
+
+.sub-policy__img {
+	margin-bottom: 1.5rem;
+	margin-left: calc((50vw - 50%) * -1);
+	margin-right: calc((50vw - 50%) * -1);
+}
+
+.sub-policy__img img {
+	height: auto;
+	width: 100%;
+}
+
+.sub-policy__detail--number {
+	font-size: 1.25rem;
+	letter-spacing: 0.125rem;
+	line-height: 1.8125rem;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.sub-policy__detail--text {
+	letter-spacing: 0.125rem;
+	line-height: 1.45rem;
+	margin: auto;
+	max-width: 33.75rem;
+	text-align: left;
+	width: 100%;
 }
 
 .p-test {

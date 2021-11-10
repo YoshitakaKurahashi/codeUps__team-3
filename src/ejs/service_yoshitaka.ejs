@@ -2,35 +2,31 @@
 <html lang="ja">
   <%- include('./common/_head') %>
   <body class="service-page">
-    
     <!-- 下層ページのMV -->
-    <%- include('./parts/_c-service-mv') %> 
+    <%- include('./parts/_c-service-mv') %>
 
     <!-- パンくずリスト -->
     <div class="l-inner">
-      <%- include('./parts/_c-breadcrumbs') %> 
-    </div><!-- /.l-inner -->
+      <div class="l-breadcrumbs"><%- include('./parts/_c-breadcrumbs') %></div>
+      <!-- /.l-breadcrumbs -->
+    </div>
+    <!-- /.l-inner -->
 
     <!-- service -->
-    <%- include('./parts/_c-service', {
-      img1:'./images/common/business-policy-1.png',
-      img_alt1:'',
+    <div class="l-inner">
+      <%- include('./parts/_c-service', {
+      img1:'./images/common/business-policy-1.png', img_alt1:'',
       title1:'企業理念1',
       text1:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
-      img2:'./images/common/business-policy-2.png',
-      img_alt2:'',
+      img2:'./images/common/business-policy-2.png', img_alt2:'',
       title2:'企業理念2',
       text2:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
-      img3:'./images/common/business-policy-3.png',
-      img_alt3:'',
+      img3:'./images/common/business-policy-3.png', img_alt3:'',
       title3:'企業理念3',
       text3:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
-    }) %> 
-
-    <!-- ページネーション作成（プラグインwp-pagenaviを想定） -->
-    <%- include('./parts/_c-pagination') %>
-
-    
+      }) %>
+    </div>
+    <!-- /.l-inner -->
 
     <div class="p-contact l-contact">
       <div class="p-contact__inner l-inner">
