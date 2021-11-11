@@ -1,0 +1,7 @@
+.l-breadcrumbs {
+  margin-bottom: rem(85);
+
+  @include mq(tab) {
+    margin-bottom: rem(70);
+  }
+}
