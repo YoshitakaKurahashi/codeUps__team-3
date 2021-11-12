@@ -1315,6 +1315,43 @@ html {
 	font-size: 3.125rem;
 }
 
+.about {
+	padding-bottom: 8.75rem;
+	padding-top: 9.125rem;
+}
+
+.about__contents {
+	margin-bottom: 4.375rem;
+}
+
+.about__content {
+	padding-bottom: 1.75rem;
+}
+
+.about__content:not(:first-child) {
+	margin-top: 1.875rem;
+}
+
+.about__content dt,
+.about__content dd {
+	font-size: 1rem;
+}
+
+.about__content dt {
+	padding-left: 0rem;
+	width: 9.5rem;
+}
+
+.about__content dd {
+	letter-spacing: 0.0625rem;
+	width: calc(100% - 9.5rem);
+}
+
+.about__map {
+	margin: 0;
+	padding-top: 45.5%;
+}
+
 .p-blog__contents {
 	display: flex;
 	justify-content: space-between;
