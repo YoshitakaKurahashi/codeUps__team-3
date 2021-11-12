@@ -8,22 +8,19 @@
     <!-- パンくずリスト -->
     <div class="l-inner"><%- include('./parts/_c-breadcrumbs') %></div>
     <!-- /.l-inner -->
-
-
-    <% var about = {
-      companyName:'テキストが入ります。',
+    
+    <!-- 企業概要 -->
+    <div class="l-inner">
+      <%- include('./parts/_c-about', {
+        companyName:'テキストが入ります。',
       establishment:'テキストが入ります。',
       capitalStock:'テキストが入ります。',
       netSales:'テキストが入ります。',
       representative:'テキストが入ります。',
       employees:'テキストが入ります。',
-      businessDescription:'テキストが入ります。',
+      businessDescription:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。',
       location:'テキストが入ります。'
-    } %> 
-    
-    <!-- 企業概要 -->
-    <div class="l-inner">
-      <%- include('./parts/_c-about') %> 
+      }) %> 
     </div><!-- /.l-inner -->
 
 
