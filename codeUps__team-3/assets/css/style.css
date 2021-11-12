@@ -880,6 +880,62 @@ summary {
 	letter-spacing: 0.125rem;
 }
 
+.about {
+	padding-bottom: 7.5rem;
+	padding-top: 6.25rem;
+	width: 100%;
+}
+
+.about__contents {
+	margin-bottom: 7.5rem;
+}
+
+.about__content {
+	border-bottom: solid 1px #FFFFFF;
+	display: flex;
+	flex-flow: row wrap;
+	padding-bottom: 1.25rem;
+	width: 100%;
+}
+
+.about__content:not(:first-child) {
+	margin-top: 1.0625rem;
+}
+
+.about__content dt,
+.about__content dd {
+	display: inline-block;
+	font-size: 0.8125rem;
+}
+
+.about__content dt {
+	line-height: 1.3125rem;
+	padding-left: 0.3125rem;
+	width: 7.1875rem;
+}
+
+.about__content dd {
+	line-height: 1.5rem;
+	width: calc(100% - 7.1875rem);
+}
+
+.about__map {
+	margin-left: calc((50vw - 50%) * -1);
+	margin-right: calc((50vw - 50%) * -1);
+	padding-top: 89.5%;
+	position: relative;
+}
+
+.about__map iframe {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
 .p-contact {
 	background-color: #3D3D3D;
 }
