@@ -1,0 +1,90 @@
+.about {
+  width: 100%;
+  padding-top: rem(100);
+  padding-bottom: rem(120);
+
+  @include mq(tab) {
+    padding-top: rem(146);
+    padding-bottom: rem(140);
+  }
+}
+
+.about__contents {
+  margin-bottom: rem(120);
+
+  @include mq(tab) {
+    margin-bottom: rem(70);
+  }
+}
+
+.about__content {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding-bottom: rem(20);
+  border-bottom: solid 1px $text-color;
+
+  @include mq(tab) {
+    padding-bottom: rem(28);
+  }
+
+  &:not(:first-child) {
+    margin-top: rem(17);
+
+    @include mq(tab) {
+      margin-top: rem(30);
+    }
+  }
+
+  dt,
+  dd {
+    display: inline-block;
+    font-size: rem(13);
+
+    @include mq(tab) {
+      font-size: rem(16);
+    }
+  }
+
+  dt {
+    width: rem(115);
+    padding-left: rem(5);
+    line-height: rem(21);
+    @include mq(tab) {
+      padding-left: rem(0);
+      width: rem(152);
+    }
+  }
+
+  dd {
+    width: calc(100% - #{rem(115)});
+    line-height: rem(24);
+
+    @include mq(tab) {
+    width: calc(100% - #{rem(152)});
+      letter-spacing: rem(1);
+    }
+  }
+}
+
+.about__map {
+  padding-top: 89.5%;
+  position: relative;
+  margin-left: calc((50vw - 50%) * -1);
+  margin-right: calc((50vw - 50%) * -1);
+
+  @include mq(tab) {
+    margin: 0;
+    padding-top: 45.5%;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
