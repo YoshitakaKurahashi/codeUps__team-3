@@ -880,6 +880,16 @@ summary {
 	letter-spacing: 0.125rem;
 }
 
+.about-mainvisual {
+	background: url(/images/common/aboutPage-MV.png) center center/cover;
+	background-repeat: no-repeat;
+	margin-bottom: 1rem;
+	padding-top: 113.3%;
+	position: relative;
+	width: 100vw;
+	z-index: 1;
+}
+
 .about {
 	padding-bottom: 7.5rem;
 	padding-top: 6.25rem;
@@ -1313,6 +1323,22 @@ html {
 .c-test {
 	color: green;
 	font-size: 3.125rem;
+}
+
+.about-mainvisual {
+	background: url(/images/common/aboutPage-MVPC.png) center center/cover;
+	padding-top: 28.9%;
+}
+
+.about-mainvisual::after {
+	background: rgba(17, 17, 17, 0.3);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2;
 }
 
 .about {
