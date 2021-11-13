@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head') %>
+  <body class="service-page">
+    <!-- 下層ページのMV -->
+    <%- include('./parts/_c-blog-mv') %>
+
+    <!-- パンくずリスト -->
+    <div class="l-inner"><%- include('./parts/_c-breadcrumbs') %></div>
+    <!-- /.l-inner -->
+    
+    <!-- ブログ一覧 -->
+    <div class="l-inner">
+      
+    </div><!-- /.l-inner -->
+
+
+    <div class="p-contact l-contact">
+      <div class="p-contact__inner l-inner">
+        <div class="p-contact__container">
+          <div class="p-section-title p-section-title__left">
+            <%- include('./parts/_c-section-title__english',{text:'Contact'}) %>
+            <%-
+            include('./parts/_c-section-title__contact',{text:'お問い合わせ'})
+            %>
+          </div>
+          <!-- /p-section-title -->
+          <div class="p-contact__text">
+            <%-
+            include('./parts/_c-text',{text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
+            %>
+          </div>
+          <!-- /p-contact__text -->
+          <div class="p-contact__btn">
+            <%- include('./parts/_c-btn',{text:'お問い合わせへ', link:'#'}) %>
+          </div>
+          <!-- /p-contact__btn -->
+        </div>
+        <!-- /p-contact__container -->
+      </div>
+      <!-- /p-contact__inner -->
+    </div>
+    <!-- /p-contact -->
+
+    <%- include('./common/_footer') %>
+  </body>
+</html>

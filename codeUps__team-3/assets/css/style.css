@@ -946,6 +946,16 @@ summary {
 	width: 100%;
 }
 
+.blog-mainvisual {
+	background: url(/images/common/aboutPage-MV.png) center center/cover;
+	background-repeat: no-repeat;
+	margin-bottom: 1rem;
+	padding-top: 113.3%;
+	position: relative;
+	width: 100vw;
+	z-index: 1;
+}
+
 .p-contact {
 	background-color: #3D3D3D;
 }
@@ -1376,6 +1386,22 @@ html {
 .about__map {
 	margin: 0;
 	padding-top: 45.5%;
+}
+
+.blog-mainvisual {
+	background: url(/images/common/aboutPage-MVPC.png) center center/cover;
+	padding-top: 28.9%;
+}
+
+.blog-mainvisual::after {
+	background: rgba(17, 17, 17, 0.3);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2;
 }
 
 .p-blog__contents {
