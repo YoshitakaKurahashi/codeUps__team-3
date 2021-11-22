@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+  <body>
+
+    <%- include('./parts/_c-breadcrumbs',{text:'お問い合わせ'}) %>
+
+    <section class="l-contact-details p-contact-details">
+        <div class="p-contact-details__inner l-inner">
+            <div class="p-contact-details__container">
+                <div class="p-contact-details__content">
+                    <%- include('./parts/_c-contact-details__head',{text:'会社名'}) %>
+                    <div class="p-contact-details__item">
+                        <input class="p-contact-details__text" type="text" required>
+                    </div><!-- /p-contact__item -->
+                </div><!-- /p-contact__content -->
+                <div class="p-contact-details__content">
+                    <%- include('./parts/_c-contact-details__head',{text:'お名前'}) %>
+                    <div class="p-contact-details__item">
+                        <input class="p-contact-details__text" type="text" required>
+                    </div><!-- /p-contact__item -->
+                </div><!-- /p-contact__content -->
+                <div class="p-contact-details__content">
+                    <%- include('./parts/_c-contact-details__head',{text:'ふりがな'}) %>
+                    <div class="p-contact-details__item">
+                        <input class="p-contact-details__text" type="text" required>
+                    </div><!-- /p-contact__item -->
+                </div><!-- /p-contact__content -->
+                <div class="p-contact-details__content">
+                    <%- include('./parts/_c-contact-details__head',{text:'メールアドレス'}) %>
+                    <div class="p-contact-details__item">
+                        <input class="p-contact-details__text" type="email" required>
+                    </div><!-- /p-contact__item -->
+                </div><!-- /p-contact__content -->
+                <div class="p-contact-details__content">
+                    <%- include('./parts/_c-contact-details__headTextarea',{text:'お問い合わせ内容'}) %>
+                    <div class="p-contact-details__item p-contact-details__textarea">
+                       <textarea class="c-contact-details__textarea"></textarea><!-- / -->
+                    </div><!-- /p-contact__item -->
+                </div><!-- /p-contact__content -->
+                <div class="p-contact-details__submit">
+                    <input type="submit" class="p-contact-details__btn" value="送信"> 
+                </div><!-- /p-contact-details__submit -->
+            </div><!-- /p-contact__container -->
+        </div><!-- /p-contact__inner -->
+    </section><!-- /p-contact -->
+    
+
+
+
+  <%- include('./common/_footer') %>
+
+    
+  </body>
+</html>

@@ -22,7 +22,7 @@ input[type="month"],
 input[type="time"] {
 	margin: 0;
 	padding: 4px;
-	border: 1px solid #ccc;
+	border: none;
 	outline: none;
 	font-size: 16px;
 }
@@ -41,7 +41,7 @@ select {
 	margin-right: 0;
 	margin-left: 0;
 	padding: 4px;
-	border: 1px solid #ccc;
+	border: none;
 	border-radius: 0;
 	outline: none;
 	background: none;
@@ -133,7 +133,7 @@ legend {
 }
 
 /* button */
-input[type="submit"],
+// input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button {
@@ -157,11 +157,11 @@ button {
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {}
-button:-moz-focusring,
+// [type="submit"]::-moz-focus-inner {}
+// button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {}
+// [type="submit"]:-moz-focusring {}
 /* IE */
 input::-ms-clear {}
 input::-ms-reveal {}
@@ -173,7 +173,7 @@ select::-ms-expand {
 [type="number"]::-webkit-outer-spin-button {}
 ::-webkit-file-upload-button {}
 /* iOS */
-input[type="submit"]::-webkit-search-decoration,
+// input[type="submit"]::-webkit-search-decoration,
 input[type=reset]::-webkit-search-decoration,
 input[type="button"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-decoration {
@@ -254,7 +254,7 @@ input[type="radio"]:checked + span::after {
 }
 
 /* button */
-input[type="submit"]:hover,
+// input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover {
@@ -268,7 +268,7 @@ input:focus,
 textarea:focus {
 	border-color: #3498db;
 }
-input[type="submit"]:focus,
+// input[type="submit"]:focus,
 input[type=reset]:focus,
 input[type="button"]:focus,
 input[type="search"]:focus {
@@ -303,3 +303,4 @@ input:required {}
 input::-webkit-input-placeholder {}
 input::-moz-placeholder {}
 input:-ms-input-placeholder {}
+

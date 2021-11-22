@@ -1,0 +1,48 @@
+.p-contact-details__container {
+    max-width: rem(540);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-contact-details__content {
+    font-size: rem(14);
+    margin-top: rem(32);
+
+    @include mq(tab) {
+        position: relative;
+        margin-top: rem(45);
+    }
+}
+
+.p-contact-details__item {
+    
+    padding: rem(3.5) rem(16);
+    background-color: #fff;
+}
+
+.p-contact-details__text {
+    width: 100%;
+    font-size: rem(14);
+}
+
+.p-contact-details__btn {
+    margin-top: rem(48);
+    background-color: #fff;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    font-size: rem(16);
+    letter-spacing: rem(2);
+    padding: rem(10) 0;
+    width: 100%;
+
+    @include mq(tab) {
+        max-width: rem(360);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: rem(56);
+        padding: rem(15) 0;
+    }
+}

@@ -1,0 +1,14 @@
+.c-contact-details__headTextarea {
+    display: flex;
+
+    @include mq(tab) {
+        position: absolute;
+        content: "";
+        top: rem(10);
+        left: -30%;
+        
+        justify-content: right;
+        width: rem(135);
+    }
+
+}

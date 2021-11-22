@@ -1,0 +1,14 @@
+.c-contact-details__head {
+    display: flex;
+
+    @include mq(tab) {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: -30%;
+        transform: translateY(-50%);
+        justify-content: right;
+        width: rem(135);
+    }
+
+}
