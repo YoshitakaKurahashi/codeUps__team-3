@@ -12,3 +12,12 @@
         padding-top: rem(5);
     }
 }
+
+.c-news__title:hover {
+
+    @include mq(tab) {
+        cursor: pointer;
+        color: #F9F871;
+        transition: .3s;
+    }
+}

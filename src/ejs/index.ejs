@@ -5,18 +5,10 @@
 
     <section class="l-news p-news">
       <div class="p-news__inner l-inner">
-        <div class="p-news__container">
-          <div class="p-news__date">
-            <%- include('./parts/_c-news__date',{text:'2020.07.20'}) %>
-          </div><!-- /p-news__tag -->
-          <div class="p-news__tag">
-            <%- include('./parts/_c-news__tag',{text:'お知らせ'}) %>
-          </div><!-- /p-news__tag -->
-          <div class="p-news__title">
-            <%- include('./parts/_c-news__title',{title:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %>
-          </div><!-- /p-news__text -->
+        <div class="l-news__container p-news__container">
+          <%- include('./common/_news-contents') %>
           <div class="p-news__btn">
-            <%- include('./parts/_c-news__btn',{text:'すべて見る', link:'#'}) %>
+            <%- include('./parts/_c-news__btn',{text:'すべて見る', link:'news_yuichi.html'}) %>
           </div><!-- /p-news__btn -->
         </div><!-- /p-news__container -->
       </div><!-- /l-news -->
@@ -62,22 +54,7 @@
     <% } %> 
   </div><!-- /.blog__contents -->
 
-  <div class="p-contact l-contact">
-    <div class="p-contact__inner l-inner">
-      <div class="p-contact__container">
-        <div class="p-section-title p-section-title__left">
-          <%- include('./parts/_c-section-title__english',{text:'Contact'}) %>
-          <%- include('./parts/_c-section-title__contact',{text:'お問い合わせ'}) %>
-        </div><!-- /p-section-title -->
-        <div class="p-contact__text">
-          <%- include('./parts/_c-text',{text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
-        </div><!-- /p-contact__text -->
-        <div class="p-contact__btn">
-          <%- include('./parts/_c-btn',{text:'お問い合わせへ', link:'#'}) %>
-        </div><!-- /p-contact__btn -->
-      </div><!-- /p-contact__container -->
-    </div><!-- /p-contact__inner -->
-  </div><!-- /p-contact -->
+  <%- include('./common/_contact') %>
 
 
 
