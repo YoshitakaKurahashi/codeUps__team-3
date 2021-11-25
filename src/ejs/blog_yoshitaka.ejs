@@ -8,12 +8,48 @@
     <!-- パンくずリスト -->
     <div class="l-inner"><%- include('./parts/_c-breadcrumbs') %></div>
     <!-- /.l-inner -->
-    
-    <!-- ブログ一覧 -->
-    <div class="l-inner">
-      
-    </div><!-- /.l-inner -->
 
+    <section class="blog-under">
+      <div class="l-inner">
+        <!-- カテゴリ表示 -->
+        <div class="blog-under__category">
+          <div class="blog-category">
+            <ul class="blog-category__items">
+              <li class="blog-category__item"><a href="">ALL</a></li><!-- /.blog-category__item -->
+              <li class="blog-category__item"><a href="">カテゴリ１</a></li><!-- /.blog-category__item -->
+              <li class="blog-category__item"><a href="">カテゴリカテゴリ</a></li><!-- /.blog-category__item -->
+              <li class="blog-category__item"><a href="">カテ</a></li><!-- /.blog-category__item -->
+            </ul><!-- /.blog-category__items -->
+          </div><!-- /.blog-category -->
+        </div>
+        <!-- /.blog-under__category -->
+
+        <!-- ブログ一覧 -->
+        <div class="blog-under__contents">
+          <div class="p-blog__contents">
+            <% for (var i=1; i <= 8; i++) { %> 
+              <%- include('./parts/_c-blog-card',{
+              link:'#',
+              img:'./images/common/blog-img01.jpg',
+              img__alt:'rectangle',
+              blog__title:'タイトルが入ります。タイトルが入ります。',
+              blog__text:'説明文が入ります。説明文が入ります。説明文が入ります。',
+              blog__category:'カテゴリ',
+              date1:'2021-07-20',
+              date2:'2021.07.20'
+            }) %> 
+          <% } %> 
+        </div><!-- /.blog__contents -->
+        </div><!-- /.blog-under__contents -->
+
+        <!-- ページネーション -->
+        <div class="blog-under__pagination">
+          <%- include('./parts/_c-pagination') %>
+        </div><!-- /.blog-under__pagination -->
+      </div>
+      <!-- /.l-inner -->
+    </section>
+    <!-- /.blog-under -->
 
     <div class="p-contact l-contact">
       <div class="p-contact__inner l-inner">

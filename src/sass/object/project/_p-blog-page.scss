@@ -2,7 +2,7 @@
 .blog-mainvisual {
   width: 100vw;
   padding-top: 113.3%;
-  background: url(/images/common/aboutPage-MV.png) center center / cover;
+  background: url(/images/common/blogPage-MV.png) center center / cover;
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
@@ -10,7 +10,7 @@
 
   @include mq(tab) {
     padding-top: 28.9%;
-    background: url(/images/common/aboutPage-MVPC.png) center center / cover;
+    background: url(/images/common/blogPage-MVPC.png) center center / cover;
 
     &::after {
       content: "";
@@ -26,3 +26,66 @@
 }
 
 // Blog以下CSS
+
+.blog-under {
+  padding-top: rem(85);
+  padding-bottom: rem(120);
+}
+
+.blog-under__category {
+  margin-bottom: rem(21);
+}
+
+.blog-category {
+}
+
+.blog-category__items {
+  display: inline-block;
+}
+
+.blog-category__item {
+  display: inline-block;
+  line-height: rem(23.2);
+  letter-spacing: 0.02em;
+  margin-bottom: rem(16);
+  position: relative;
+
+
+  &:first-child {
+  padding: rem(3) rem(8) rem(4) rem(8);
+    background: $text-color;
+    color: $btn-color;
+  }
+
+  &:not(:first-child)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: rem(-3);
+    width: 100%;
+    height: rem(1);
+    background: #000000;
+
+    @include mq(tab) {
+      position: static;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: rem(23);
+  }
+
+
+  a {
+  }
+}
+
+.blog-under__contents {
+  margin-bottom: rem(83);
+}
+
+.p-blog__contents {
+}
+
+.blog-under__pagination {
+}
