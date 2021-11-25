@@ -82,6 +82,10 @@
 
 .blog-under__contents {
   margin-bottom: rem(83);
+
+  @include mq(tab) {
+    margin-bottom: rem(80);
+  }
 }
 
 .p-blog__contents {
