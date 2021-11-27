@@ -1005,7 +1005,7 @@ summary {
 
 .blog__title {
 	font-size: 1.25rem;
-	letter-spacing: 0.004em;
+	letter-spacing: 0.025rem;
 	line-height: 2.1875rem;
 	margin-bottom: 1rem;
 }
@@ -1018,7 +1018,7 @@ summary {
 
 .blog__days {
 	display: inline-block;
-	letter-spacing: 0.004em;
+	letter-spacing: 0.025rem;
 	line-height: 2.01875rem;
 	margin-right: 1.5rem;
 }
@@ -1052,7 +1052,7 @@ summary {
 }
 
 .blog__text {
-	letter-spacing: 0.004em;
+	letter-spacing: 0.025rem;
 	line-height: 2.1875rem;
 	margin-bottom: 1.5rem;
 	text-align: left;
@@ -1060,7 +1060,7 @@ summary {
 
 .blog__heading {
 	font-size: 1.25rem;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.125rem;
 	line-height: 1.8125rem;
 	margin-bottom: 1.5rem;
 	padding-left: 0.5625rem;
@@ -1080,7 +1080,7 @@ summary {
 .blog__subheading {
 	display: inline-block;
 	font-size: 1.125rem;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.125rem;
 	line-height: 1.625rem;
 	margin-bottom: 1.5rem;
 	padding-bottom: 0.1875rem;
@@ -1117,8 +1117,9 @@ summary {
 
 .relation__title {
 	border: 1px solid #ffffff;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.125rem;
 	line-height: 1.45rem;
+	margin: auto;
 	margin-bottom: 2rem;
 	max-width: 33.75rem;
 	padding-bottom: 0.625rem;
@@ -1683,6 +1684,75 @@ html {
 .about__map {
 	margin: 0;
 	padding-top: 45.5%;
+}
+
+.blog-detail__contents {
+	margin: auto;
+	margin-bottom: 4.5rem;
+	max-width: 50rem;
+	width: 100%;
+}
+
+.blog__title {
+	font-size: 1.4375rem;
+	margin-bottom: 2rem;
+}
+
+.blog__infomation {
+	margin-bottom: 2rem;
+}
+
+.blog__thumbnail {
+	margin: auto;
+	margin-bottom: 2rem;
+}
+
+.blog__text {
+	margin-bottom: 2rem;
+}
+
+.blog__heading {
+	margin-bottom: 2rem;
+	padding-left: 0.4375rem;
+}
+
+.blog__lists {
+	margin-bottom: 2rem;
+}
+
+.blog-detail__pagination {
+	margin-bottom: 6.5rem;
+}
+
+.relation__title {
+	background: #333333;
+	margin-bottom: 5rem;
+	max-width: 100%;
+	padding-bottom: 0.5rem;
+}
+
+.relation__blogs {
+	display: flex;
+	justify-content: space-between;
+}
+
+.relation__blogs .l-blog-card {
+	margin: 0;
+	max-width: calc((100% - 2rem * 3) / 4);
+}
+
+.relation__blogs .c-card-content {
+	padding: 0.1875rem 0.4375rem 0.875rem 0.5625rem;
+}
+
+.relation__blogs .c-card-content__text {
+	display: none;
+}
+
+.relation__blogs .c-card-content__title {
+	font-size: 0.875rem;
+	letter-spacing: 0.0625rem;
+	line-height: 2.1875rem;
 }
 
 .blog-mainvisual {
