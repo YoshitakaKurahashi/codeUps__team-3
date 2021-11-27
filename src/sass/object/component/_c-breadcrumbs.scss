@@ -1,4 +1,10 @@
 .breadcrumbs {
+  margin-top: rem(16);
+  margin-left: rem(20);
+
+  @include mq(tab) {
+    margin-left: rem(90);
+}
 }
 
 .breadcrumbs ul {
@@ -16,7 +22,6 @@
 .breadcrumbs a {
   line-height: rem(19);
   letter-spacing: rem(1);
-  font-family: 'Roboto', sans-serif;
 }
 
 .breadcrumbs span {

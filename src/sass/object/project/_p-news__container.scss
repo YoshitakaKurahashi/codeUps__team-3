@@ -3,10 +3,11 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+
     @include mq(tab) {
         max-width: rem(1042);
+        width: 100%;
         display: flex;
-        vertical-align: middle;
-        position: relative
+        align-items: center;
     }
 }

@@ -1,0 +1,10 @@
+.p-news__contents {
+    position: relative;
+
+    @include mq(tab) {
+        position: static;
+        display: flex;
+        // align-items: center;
+        
+    }
+}

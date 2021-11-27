@@ -1,0 +1,7 @@
+.c-contact-details__textarea {
+    height: rem(250);
+
+    @include mq(tab) {
+        height: rem(300);
+    }
+}
