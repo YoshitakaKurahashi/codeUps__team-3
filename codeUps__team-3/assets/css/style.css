@@ -582,10 +582,6 @@ summary {
 	margin-bottom: 1.5rem;
 }
 
-.l-breadcrumbs {
-	margin-bottom: 5.3125rem;
-}
-
 .l-contact-details {
 	margin-top: 5.1875rem;
 }
@@ -711,8 +707,12 @@ summary {
 }
 
 .breadcrumbs {
-	margin-left: 1.25rem;
 	margin-top: 1rem;
+}
+
+.breadcrumbs ul {
+	display: inline-block;
+	text-align: left;
 }
 
 .breadcrumbs li {
@@ -970,7 +970,6 @@ summary {
 	width: 100%;
 }
 
-
 .blog-mainvisual {
 	background: url(/images/common/blogPage-MV.png) center center/cover;
 	background-repeat: no-repeat;
@@ -1133,6 +1132,10 @@ summary {
 	padding: 1.25rem 0 1.75rem;
 }
 
+.p-news__contents {
+	position: relative;
+}
+
 .p-section-title__left {
 	margin-right: auto;
 	text-align: left;
@@ -1237,10 +1240,6 @@ summary {
 	font-size: 1.25rem;
 }
 
-.p-news__contents {
-	position: relative;
-}
-
 .test {
 	font-size: 1.0rem;
 }
@@ -1292,10 +1291,6 @@ html {
 	margin-right: 1.25rem;
 }
 
-.l-breadcrumbs {
-	margin-bottom: 4.375rem;
-}
-
 .l-contact {
 	margin-top: 9.375rem;
 }
@@ -1335,10 +1330,6 @@ html {
 
 .c-card-info__day {
 	letter-spacing: 1px;
-}
-
-.breadcrumbs {
-	margin-left: 5.625rem;
 }
 
 .c-btn {
@@ -1676,6 +1667,11 @@ html {
 	padding: 0;
 }
 
+.p-news__contents {
+	display: flex;
+	position: static;
+}
+
 .p-section-title {
 	margin: initial;
 	max-width: 68.75rem;
@@ -1758,11 +1754,6 @@ html {
 .p-test {
 	color: green;
 	font-size: 3.125rem;
-}
-
-.p-news__contents {
-	display: flex;
-	position: static;
 }
 
 }
