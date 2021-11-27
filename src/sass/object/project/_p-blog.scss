@@ -2,6 +2,7 @@
 
   @include mq(tab) {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: start;
   }
 }
