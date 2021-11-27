@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head') %>
+  <body class="">
+    <!-- パンくずリスト -->
+    <div class="l-inner">
+      <%- include('./parts/_c-breadcrumbs',{text:'ブログ記事一覧'}) %>
+    </div>
+    <!-- /.l-inner -->
+
+    <!-- ブログ詳細 -->
+    <section class="blog-detail l-inner">
+      <div class="blog-detail__contents">
+        <h2 class="blog__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</h2>
+        <!-- /.blog__title -->
+        <ul class="blog__infomation">
+          <li class="blog__days">
+            2020/06/13
+          </li>
+          <!-- /.blog__days -->
+          <li class="blog__category"><a href="">カテゴリ１</a></li>
+          <!-- /.blog__category -->
+        </ul>
+        <!-- /.blog__infomation -->
+        <div class="blog__thumbnail"><img src="./images/common/thumbnail01.png" alt="" /></div>
+        <!-- /.blog__thumbnail -->
+        <p class="blog__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <!-- /.blog__text -->
+        <div class="blog__heading">見出し２</div>
+        <!-- /.blog__heading -->
+        <p class="blog__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <!-- /.blog__text -->
+        <div class="blog__subheading">見出し３見出し３見出し３見出し３</div>
+        <!-- /.blog__subheading -->
+        <p class="blog__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <!-- /.blog__text -->
+        <div class="blog__thumbnail"><img src="./images/common/thumbnail02.png" alt="" /></div>
+        <!-- /.blog__thumbnail -->
+        <ul class="blog__lists">
+          <li class="blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+          <li class="blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+          <li class="blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+          <li class="blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+        </ul><!-- /.blog__lists -->
+        <ul class="blog__lists">
+          <li class="blog__list">1 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+          <li class="blog__list">2 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+          <li class="blog__list">3 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+          <li class="blog__list">4 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+        </ul><!-- /.blog__lists -->
+      </div>
+      <!-- /.blog-detail__contents -->
+      <div class="blog-detail__pagination">
+        <%- include('./parts/_c-pagination02') %> 
+      </div>
+      <!-- /.blog-detail__pagination -->
+      <div class="blog-detail__relation">
+        <div class="relation__title">関連記事</div><!-- /.relation__title -->
+        <div class="relation__blogs">
+          <% for (var i=1; i <= 4; i++) { %> 
+            <%- include('./parts/_c-blog-card',{
+            link:'#',
+            img:'./images/common/blog-img01.jpg',
+            img__alt:'rectangle',
+            blog__title:'タイトルが入ります。タイトルが入ります。',
+            blog__text:'説明文が入ります。説明文が入ります。説明文が入ります。',
+            blog__category:'カテゴリ',
+            date1:'2021-07-20',
+            date2:'2021.07.20'
+          }) %> 
+        <% } %>
+        </div><!-- /.relation__blogs -->
+      </div>
+      <!-- /.blog-detail__relation -->
+    </section>
+    <!-- /.blog-detail -->
+
+    <%- include('./common/_contact') %> 
+    <%- include('./common/_footer') %>
+  </body>
+</html>
