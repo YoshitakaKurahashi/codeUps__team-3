@@ -14,7 +14,7 @@
   padding: 0 rem(12);
   color: #ffffff;
   border: 1px solid #ffffff;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .pagination__link--previous {
@@ -26,7 +26,7 @@
   border: 1px solid #ffffff;
   line-height: rem(16);
   // margin-right: rem(16);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .pagination__page:hover,
@@ -47,4 +47,30 @@
 }
 
 .pagination__link--next {
+}
+
+.pagination02__link--previous {
+  max-width: rem(71);
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  line-height: rem(23.2);
+}
+
+.pagination02__page--center {
+  max-width: rem(71);
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  line-height: rem(23.2);
+
+}
+
+.pagination02__link--next {
+  max-width: rem(71);
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  line-height: rem(23.2);
+
 }
