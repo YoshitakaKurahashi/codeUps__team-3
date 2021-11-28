@@ -45,5 +45,13 @@ jQuery(function ($) {
       scrollTop: targetY
     }, time, 'swing');
     return false;
+  }); // buger-menu
+
+  $(function () {
+    $('.p-burger__btn').on('click', function () {
+      $('.p-burger__btn').toggleClass('close');
+      $('.p-header__burger-menu').toggleClass('fade');
+      $('body').toggleClass('noscroll'); // 追記
+    });
   });
 });

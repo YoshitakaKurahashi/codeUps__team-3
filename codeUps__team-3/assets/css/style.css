@@ -750,6 +750,35 @@ summary {
 	width: 100%;
 }
 
+.c-burger-menu {
+	background: #111111;
+	height: 100%;
+	width: 100%;
+	z-index: 998;
+}
+
+.c-burger-menu__items {
+	display: block;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.c-burger-menu__item {
+	margin-right: 0;
+}
+
+.c-burger-menu__item:not(:last-child) {
+	margin-bottom: 2rem;
+}
+
+.c-burger-menu__item a {
+	letter-spacing: 0.125rem;
+	line-height: 1.45rem;
+}
+
 .c-contact-details__head {
 	display: flex;
 }
@@ -1277,6 +1306,115 @@ summary {
 .p-footer__copyright small {
 	font-size: 0.6875rem;
 	letter-spacing: 1.2px;
+}
+
+.p-top-header {
+	align-items: center;
+	background: rgba(17, 17, 17, 0.5);
+	display: flex;
+	left: 0;
+	padding-bottom: 0.625rem;
+	padding-left: 1.375rem;
+	padding-right: 1.375rem;
+	padding-top: 0.625rem;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.p-header__title {
+	display: inline-block;
+	font-size: 1.25rem;
+	letter-spacing: 0.075rem;
+	line-height: 1.8875rem;
+	margin-right: auto;
+	position: relative;
+	z-index: 999;
+}
+
+.p-header__title a {
+	color: #FFFFFF;
+	display: inline-block;
+	font-family: "Playlist", sans-serif;
+	font-size: 1.25rem;
+	letter-spacing: 0.075rem;
+	line-height: 1.8875rem;
+}
+
+.p-burger__btn {
+	display: block;
+	height: 0.8125rem;
+	position: relative;
+	width: 1.5rem;
+	z-index: 1000;
+}
+
+.p-bar {
+	background: #FFFFFF;
+	display: block;
+	height: 0.125rem;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	width: 1.5rem;
+}
+
+.p-bar-top {
+	top: 0;
+}
+
+.p-bar-mid {
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.p-bar-bottom {
+	bottom: 0;
+}
+
+.p-burger__btn.close .p-bar-top {
+	transform: translate(-50%, 6px) rotate(45deg);
+	transition: transform .3s;
+}
+
+.p-burger__btn.close .p-bar-mid {
+	opacity: 0;
+	transition: opacity .3s;
+}
+
+.p-burger__btn.close .p-bar-bottom {
+	transform: translate(-50%, -5px) rotate(-45deg);
+	transition: transform .3s;
+}
+
+.p-header__burger-menu {
+	height: 100vh;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	transition: all .5s;
+	visibility: hidden;
+	width: 100vw;
+	z-index: 998;
+}
+
+.p-header__burger-menu.fade {
+	opacity: 1;
+	visibility: visible;
+}
+
+.noscroll {
+	overflow: hidden;
+}
+
+.p-header__nav {
+	display: none;
+}
+
+.p-header__contact {
+	display: none;
 }
 
 .p-news__container {
