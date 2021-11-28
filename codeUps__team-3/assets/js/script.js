@@ -45,5 +45,29 @@ jQuery(function ($) {
       scrollTop: targetY
     }, time, 'swing');
     return false;
+  }); // buger-menu
+
+  $(function () {
+    $('.p-burger__btn').on('click', function () {
+      $('.p-burger__btn').toggleClass('close');
+      $('.p-header__burger-menu').toggleClass('fade');
+      $('body').toggleClass('noscroll'); // 追記
+    });
+  }); // header固定
+
+  var _window = $(window),
+      _header = $('.p-top-header'),
+      heroBottom;
+
+  _window.on('scroll', function () {
+    heroBottom = $('.mainvisual').height();
+
+    if (_window.scrollTop() > heroBottom) {
+      _header.addClass('transform');
+    } else {
+      _header.removeClass('transform');
+    }
   });
+
+  _window.trigger('scroll');
 });

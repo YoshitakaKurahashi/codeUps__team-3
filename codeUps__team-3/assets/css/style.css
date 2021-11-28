@@ -750,6 +750,35 @@ summary {
 	width: 100%;
 }
 
+.c-burger-menu {
+	background: #111111;
+	height: 100%;
+	width: 100%;
+	z-index: 998;
+}
+
+.c-burger-menu__items {
+	display: block;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.c-burger-menu__item {
+	margin-right: 0;
+}
+
+.c-burger-menu__item:not(:last-child) {
+	margin-bottom: 2rem;
+}
+
+.c-burger-menu__item a {
+	letter-spacing: 0.125rem;
+	line-height: 1.45rem;
+}
+
 .c-contact-details__head {
 	display: flex;
 }
@@ -760,6 +789,36 @@ summary {
 
 .c-contact-details__textarea {
 	height: 15.625rem;
+}
+
+.c-nav__lists {
+	display: inline-block;
+}
+
+.c-nav__list {
+	display: inline-block;
+	margin-right: 2rem;
+}
+
+.c-nav__list a {
+	letter-spacing: 0.125rem;
+	line-height: 2.1875rem;
+	padding: 0.375rem 0 0.5625rem;
+	position: relative;
+}
+
+.c-nav__list a::after {
+	-webkit-transition: all .3s ease;
+	border-bottom: solid 1px #FFEA2E;
+	bottom: 0;
+	content: "";
+	display: block;
+	transition: all .3s ease;
+	width: 0;
+}
+
+.c-nav__list a:hover::after {
+	width: 100%;
 }
 
 .c-news__btn {
@@ -1237,9 +1296,13 @@ summary {
 
 .p-footer__logo a {
 	display: block;
+	font-family: "Playlist", sans-serif;
+	font-size: 1.25rem;
+	letter-spacing: 0.075rem;
+	line-height: 1.875rem;
 	margin: auto;
-	margin-bottom: 7px;
-	width: 4.375rem;
+	margin-bottom: 0.5rem;
+	text-align: center;
 }
 
 .p-footer__logo a img {
@@ -1277,6 +1340,123 @@ summary {
 .p-footer__copyright small {
 	font-size: 0.6875rem;
 	letter-spacing: 1.2px;
+}
+
+.p-blog-detail-page {
+	padding-top: 4.125rem;
+}
+
+.p-top-header {
+	align-items: center;
+	background: rgba(17, 17, 17, 0.5);
+	display: flex;
+	left: 0;
+	padding-bottom: 0.625rem;
+	padding-left: 1.375rem;
+	padding-right: 1.375rem;
+	padding-top: 0.625rem;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.p-top-header.transform {
+	background: #111111;
+}
+
+.p-header__title {
+	display: inline-block;
+	font-size: 1.25rem;
+	letter-spacing: 0.075rem;
+	line-height: 1.8875rem;
+	margin-right: auto;
+	position: relative;
+	z-index: 999;
+}
+
+.p-header__title a {
+	color: #FFFFFF;
+	display: inline-block;
+	font-family: "Playlist", sans-serif;
+	font-size: 1.25rem;
+	letter-spacing: 0.075rem;
+	line-height: 1.8875rem;
+}
+
+.p-burger__btn {
+	display: block;
+	height: 0.8125rem;
+	position: relative;
+	width: 1.5rem;
+	z-index: 1000;
+}
+
+.p-bar {
+	background: #FFFFFF;
+	display: block;
+	height: 0.125rem;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	width: 1.5rem;
+}
+
+.p-bar-top {
+	top: 0;
+}
+
+.p-bar-mid {
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.p-bar-bottom {
+	bottom: 0;
+}
+
+.p-burger__btn.close .p-bar-top {
+	transform: translate(-50%, 6px) rotate(45deg);
+	transition: transform 0.3s;
+}
+
+.p-burger__btn.close .p-bar-mid {
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.p-burger__btn.close .p-bar-bottom {
+	transform: translate(-50%, -5px) rotate(-45deg);
+	transition: transform 0.3s;
+}
+
+.p-header__burger-menu {
+	height: 100vh;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	transition: all 0.5s;
+	visibility: hidden;
+	width: 100vw;
+	z-index: 998;
+}
+
+.p-header__burger-menu.fade {
+	opacity: 1;
+	visibility: visible;
+}
+
+.noscroll {
+	overflow: hidden;
+}
+
+.p-header__nav {
+	display: none;
+}
+
+.p-header__contact {
+	display: none;
 }
 
 .p-news__container {
@@ -1877,6 +2057,57 @@ html {
 
 .p-footer__copyright small {
 	font-size: 0.9375rem;
+}
+
+.p-top-header {
+	padding-bottom: 0;
+	padding-right: 0;
+	padding-top: 0;
+	transition: all 0.5s;
+}
+
+.p-top-header.transform {
+	background: #111111;
+}
+
+.p-burger__btn {
+	display: none;
+}
+
+.p-header__burger-menu {
+	display: none;
+}
+
+.p-header__nav {
+	display: inline-block;
+	position: relative;
+	z-index: 1000;
+}
+
+.p-header__contact {
+	display: inline-block;
+	max-width: 10.625rem;
+	text-align: center;
+	width: 100%;
+}
+
+.p-header__contact a {
+	background: #FFFFFF;
+	color: #333333;
+	cursor: pointer;
+	display: inline-block;
+	letter-spacing: 0.125rem;
+	line-height: 2.1875rem;
+	max-width: 10.625rem;
+	padding: 0.4375rem 0 0.5rem;
+	transition: all 0.3s;
+	width: 100%;
+}
+
+.p-header__contact a:hover {
+	background: #333333;
+	color: #FFFFFF;
+	transition: all 0.3s;
 }
 
 .p-news__container {
