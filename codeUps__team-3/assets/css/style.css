@@ -1296,9 +1296,13 @@ summary {
 
 .p-footer__logo a {
 	display: block;
+	font-family: "Playlist", sans-serif;
+	font-size: 1.25rem;
+	letter-spacing: 0.075rem;
+	line-height: 1.875rem;
 	margin: auto;
-	margin-bottom: 7px;
-	width: 4.375rem;
+	margin-bottom: 0.5rem;
+	text-align: center;
 }
 
 .p-footer__logo a img {
