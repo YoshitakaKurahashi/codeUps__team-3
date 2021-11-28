@@ -1,9 +1,13 @@
+.p-blog-detail-page {
+  padding-top: rem(66);
+}
+
 .p-top-header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba($color: #111111, $alpha: .5);
+  background: rgba($color: #111111, $alpha: 0.5);
   z-index: 999;
   padding-left: rem(22);
   padding-right: rem(22);
@@ -11,16 +15,30 @@
   padding-bottom: rem(10);
   display: flex;
   align-items: center;
+
+  @include mq(tab) {
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: all 0.5s;
+
+    &.transform {
+      background: #111111;
+    }
+  }
+  &.transform {
+    background: #111111;
+  }
 }
 
 .p-header__title {
   margin-right: auto;
   display: inline-block;
   font-size: rem(20);
-    line-height: rem(30.2);
-    letter-spacing: rem(1.2);
-    position: relative;
-    z-index: 999;
+  line-height: rem(30.2);
+  letter-spacing: rem(1.2);
+  position: relative;
+  z-index: 999;
   a {
     font-size: rem(20);
     line-height: rem(30.2);
@@ -37,43 +55,46 @@
   width: rem(24);
   height: rem(13);
   z-index: 1000;
+
+  @include mq(tab) {
+    display: none;
+  }
 }
 
 .p-bar {
-width: rem(24);
-height: rem(2);
-display: block;
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
-background: $text-color;
-
+  width: rem(24);
+  height: rem(2);
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $text-color;
 }
 
 .p-bar-top {
-top: 0;
+  top: 0;
 }
 
 .p-bar-mid {
-top: 50%;
-transform: translate(-50%, -50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .p-bar-bottom {
-bottom: 0;
+  bottom: 0;
 }
 
 .p-burger__btn.close .p-bar-top {
   transform: translate(-50%, 6px) rotate(45deg);
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 .p-burger__btn.close .p-bar-mid {
   opacity: 0;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 .p-burger__btn.close .p-bar-bottom {
   transform: translate(-50%, -5px) rotate(-45deg);
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .p-header__burger-menu {
@@ -84,13 +105,17 @@ bottom: 0;
   top: 0;
   left: 0;
   opacity: 0;
-  transition: all .5s;
+  transition: all 0.5s;
   z-index: 998;
+
+  @include mq(tab) {
+    display: none;
+  }
 }
 
 .p-header__burger-menu.fade {
   visibility: visible;
-	opacity: 1;
+  opacity: 1;
 }
 
 .noscroll {
@@ -99,10 +124,39 @@ bottom: 0;
 
 .p-header__nav {
   display: none;
+
+  @include mq(tab) {
+    display: inline-block;
+    position: relative;
+    z-index: 1000;
+  }
 }
 
 .p-header__contact {
   display: none;
-  a {
+
+  @include mq(tab) {
+    display: inline-block;
+    max-width: rem(170);
+    width: 100%;
+    text-align: center;
+    a {
+      display: inline-block;
+      line-height: rem(35);
+      letter-spacing: rem(2);
+      background: $text-color;
+      padding: rem(7) 0 rem(8);
+      max-width: rem(170);
+      width: 100%;
+      color: $btn-color;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        background: $btn-color;
+        color: $text-color;
+        transition: all 0.3s;
+      }
+    }
   }
 }

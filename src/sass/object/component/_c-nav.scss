@@ -1,0 +1,27 @@
+.c-nav__lists {
+  display: inline-block;
+}
+
+.c-nav__list {
+  display: inline-block;
+  margin-right: rem(32);
+  a {
+    padding: rem(6) 0 rem(9);
+    line-height: rem(35);
+    letter-spacing: rem(2);
+    position: relative;
+
+    &::after {
+      border-bottom: solid 1px #FFEA2E;
+      bottom: 0;
+      content: "";
+      display: block;
+      transition: all .3s ease;
+      -webkit-transition: all .3s ease;
+      width: 0;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

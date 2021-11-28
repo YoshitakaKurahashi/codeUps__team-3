@@ -53,5 +53,21 @@ jQuery(function ($) {
       $('.p-header__burger-menu').toggleClass('fade');
       $('body').toggleClass('noscroll'); // 追記
     });
+  }); // header固定
+
+  var _window = $(window),
+      _header = $('.p-top-header'),
+      heroBottom;
+
+  _window.on('scroll', function () {
+    heroBottom = $('.mainvisual').height();
+
+    if (_window.scrollTop() > heroBottom) {
+      _header.addClass('transform');
+    } else {
+      _header.removeClass('transform');
+    }
   });
+
+  _window.trigger('scroll');
 });

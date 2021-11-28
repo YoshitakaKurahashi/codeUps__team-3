@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
   <%- include('./common/_head') %>
-  <body class="">
+  <body class="p-blog-detail-page">
+
+    <!-- header -->
+    <%- include('./common/_top-header') %> 
+
+    <!-- 下層ページのMV -->
+    <%- include('./parts/_c-blog-detail-mv') %>
+
     <!-- パンくずリスト -->
     <div class="l-inner">
       <%- include('./parts/_c-breadcrumbs',{text:'ブログ記事一覧'}) %>
