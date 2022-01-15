@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
   <%- include('./common/_head') %>
-  <body class="service-page">
+  <body class="p-service-page">
 
     <!-- header -->
     <%- include('./common/_top-header') %> 
     
     <!-- 下層ページのMV -->
-    <%- include('./parts/_c-service-mv') %>
+    <div class="p-service-mainvisual">
+      <%- include('./parts/_c-underpage-mainvisual', {title:'企業概要'}) %> 
+    </div>
 
     <!-- パンくずリスト -->
     <div class="l-inner"><%- include('./parts/_c-breadcrumbs',{text:'事業内容'}) %></div>
@@ -29,32 +31,7 @@
     </div>
     <!-- /.l-inner -->
 
-    <div class="p-contact l-contact">
-      <div class="p-contact__inner l-inner">
-        <div class="p-contact__container">
-          <div class="p-section-title p-section-title__left">
-            <%- include('./parts/_c-section-title__english',{text:'Contact'}) %>
-            <%-
-            include('./parts/_c-section-title__contact',{text:'お問い合わせ'})
-            %>
-          </div>
-          <!-- /p-section-title -->
-          <div class="p-contact__text">
-            <%-
-            include('./parts/_c-text',{text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'})
-            %>
-          </div>
-          <!-- /p-contact__text -->
-          <div class="p-contact__btn">
-            <%- include('./parts/_c-btn',{text:'お問い合わせへ', link:'#'}) %>
-          </div>
-          <!-- /p-contact__btn -->
-        </div>
-        <!-- /p-contact__container -->
-      </div>
-      <!-- /p-contact__inner -->
-    </div>
-    <!-- /p-contact -->
+    <%- include('./common/_contact') %>
 
     <%- include('./common/_footer') %>
   </body>

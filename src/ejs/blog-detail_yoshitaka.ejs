@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
   <%- include('./common/_head') %>
-  <body class="p-blog-detail-page">
+  <body class="p-detail-page">
 
     <!-- header -->
     <%- include('./common/_top-header') %> 
 
     <!-- 下層ページのMV -->
-    <%- include('./parts/_c-blog-detail-mv') %>
+    <div class="p-blog-detail-mainvisual">
+      <%- include('./parts/_c-underpage-mainvisual', {title:'企業概要'}) %> 
+    </div>
 
     <!-- パンくずリスト -->
     <div class="l-inner">
@@ -16,52 +18,52 @@
     <!-- /.l-inner -->
 
     <!-- ブログ詳細 -->
-    <section class="blog-detail l-inner">
-      <div class="blog-detail__contents">
-        <h2 class="blog__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</h2>
+    <section class="p-blog-detail l-inner">
+      <div class="p-blog-detail__contents c-blog">
+        <h2 class="c-blog__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</h2>
         <!-- /.blog__title -->
-        <ul class="blog__infomation">
-          <li class="blog__days">
+        <ul class="c-blog__infomation">
+          <li class="c-blog__days">
             2020/06/13
           </li>
           <!-- /.blog__days -->
-          <li class="blog__category"><a href="">カテゴリ１</a></li>
+          <li class="c-blog__category"><a href="">カテゴリ１</a></li>
           <!-- /.blog__category -->
         </ul>
         <!-- /.blog__infomation -->
-        <div class="blog__thumbnail"><img src="./images/common/thumbnail01.png" alt="" /></div>
+        <div class="c-blog__thumbnail"><img src="./images/common/thumbnail01.png" alt="" /></div>
         <!-- /.blog__thumbnail -->
-        <p class="blog__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <p class="c-blog__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
         <!-- /.blog__text -->
-        <div class="blog__heading">見出し２</div>
+        <div class="c-blog__heading">見出し２</div>
         <!-- /.blog__heading -->
-        <p class="blog__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <p class="c-blog__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
         <!-- /.blog__text -->
-        <div class="blog__subheading">見出し３見出し３見出し３見出し３</div>
+        <div class="c-blog__subheading">見出し３見出し３見出し３見出し３</div>
         <!-- /.blog__subheading -->
-        <p class="blog__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <p class="c-blog__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
         <!-- /.blog__text -->
-        <div class="blog__thumbnail"><img src="./images/common/thumbnail02.png" alt="" /></div>
+        <div class="c-blog__thumbnail"><img src="./images/common/thumbnail02.png" alt="" /></div>
         <!-- /.blog__thumbnail -->
-        <ul class="blog__lists">
-          <li class="blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
-          <li class="blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
-          <li class="blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
-          <li class="blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+        <ul class="c-blog__lists">
+          <li class="c-blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+          <li class="c-blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+          <li class="c-blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+          <li class="c-blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
         </ul><!-- /.blog__lists -->
-        <ul class="blog__lists">
-          <li class="blog__list">1 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
-          <li class="blog__list">2 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
-          <li class="blog__list">3 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
-          <li class="blog__list">4 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+        <ul class="c-blog__lists">
+          <li class="c-blog__list">1 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+          <li class="c-blog__list">2 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+          <li class="c-blog__list">3 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
+          <li class="c-blog__list">4 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
         </ul><!-- /.blog__lists -->
       </div>
       <!-- /.blog-detail__contents -->
-      <div class="blog-detail__pagination">
+      <div class="p-blog-detail__pagination">
         <%- include('./parts/_c-pagination02') %> 
       </div>
       <!-- /.blog-detail__pagination -->
-      <div class="blog-detail__relation">
+      <div class="p-blog-detail__relation">
         <div class="relation__title">関連記事</div><!-- /.relation__title -->
         <div class="relation__blogs">
           <% for (var i=1; i <= 4; i++) { %> 

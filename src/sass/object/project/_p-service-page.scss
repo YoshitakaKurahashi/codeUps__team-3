@@ -1,30 +1,3 @@
-// 下層ページのメインビジュアル
-.service-mainvisual {
-  width: 100vw;
-  padding-top: 113.3%;
-  background: url(/images/common/servicePage-MV.png) center center / cover;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 1;
-  margin-bottom: rem(16);
-
-  @include mq(tab) {
-    padding-top: 28.9%;
-    background: url(/images/common/servicePage-MVPC.png) center center / cover;
-
-    &::after {
-      content: "";
-      background: rgba($color: $background, $alpha: 0.3);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-    }
-  }
-}
-
 .page-title {
   position: absolute;
   top: 50%;
@@ -39,7 +12,7 @@
 }
 
 // 企業理念以下CSS
-.service {
+.p-service {
   padding-top: rem(85);
   padding-bottom: rem(120);
 
@@ -49,7 +22,7 @@
   }
 }
 
-.service__title {
+.p-service__title {
   font-size: rem(20);
   line-height: rem(29);
   letter-spacing: rem(2);
@@ -62,7 +35,7 @@
   }
 }
 
-.service__lead {
+.p-service__lead {
   line-height: rem(23.2);
   letter-spacing: rem(2);
   margin: auto;
@@ -79,87 +52,5 @@
   }
 }
 
-.service__policy {
-}
-
-.sub-policy {
-  margin-bottom: rem(48);
-
-  @include mq(tab) {
-    margin-bottom: rem(104);
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.sub-policy:nth-child(2) {
-  @include mq(tab) {
-    flex-direction: row-reverse;
-  }
-
-  .sub-policy__detail {
-    @include mq(tab) {
-      margin: 0;
-      margin-right: rem(30);
-    }
-  }
-}
-
-.sub-policy:last-child {
-  margin-bottom: 0;
-}
-
-.sub-policy__img {
-  margin-left: calc((50vw - 50%) * -1);
-  margin-right: calc((50vw - 50%) * -1);
-  margin-bottom: rem(24);
-
-  @include mq(tab) {
-    max-width: rem(550);
-    width: 100%;
-    margin: 0;
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.sub-policy__detail {
-  max-width: rem(510);
-  width: 100%;
-  @include mq(tab) {
-    padding-top: rem(20);
-    margin-left: rem(30);
-  }
-}
-
-.sub-policy__detail--number {
-  font-size: rem(20);
-  line-height: rem(29);
-  letter-spacing: rem(2);
-  margin-bottom: rem(24);
-  text-align: center;
-
-  @include mq(tab) {
-    font-size: rem(25);
-    line-height: rem(16);
-    letter-spacing: rem(0.5);
-    text-align: left;
-    margin-bottom: rem(40);
-  }
-}
-
-.sub-policy__detail--text {
-  line-height: rem(23.2);
-  letter-spacing: rem(2);
-  text-align: left;
-  max-width: rem(540);
-  width: 100%;
-  margin: auto;
-
-  @include mq(tab) {
-    line-height: rem(35);
-    letter-spacing: rem(0.5);
-  }
+.p-service__policy {
 }

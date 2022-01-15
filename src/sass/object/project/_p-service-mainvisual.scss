@@ -1,0 +1,12 @@
+// 下層ページのメインビジュアル
+.p-service-mainvisual {
+
+  background: url(/images/common/servicePage-MV.png) center center / cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+
+  @include mq(tab) {
+    background: url(/images/common/servicePage-MVPC.png) center center / cover;
+  }
+}
