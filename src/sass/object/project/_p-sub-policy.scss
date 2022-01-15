@@ -1,0 +1,81 @@
+.p-sub-policy {
+  margin-bottom: rem(48);
+
+  @include mq(tab) {
+    margin-bottom: rem(104);
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.p-sub-policy:nth-child(2) {
+  @include mq(tab) {
+    flex-direction: row-reverse;
+  }
+
+  .p-sub-policy__detail {
+    @include mq(tab) {
+      margin: 0;
+      margin-right: rem(30);
+    }
+  }
+}
+
+.p-sub-policy:last-child {
+  margin-bottom: 0;
+}
+
+.p-sub-policy__img {
+  margin-left: calc((50vw - 50%) * -1);
+  margin-right: calc((50vw - 50%) * -1);
+  margin-bottom: rem(24);
+
+  @include mq(tab) {
+    max-width: rem(550);
+    width: 100%;
+    margin: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.p-sub-policy__detail {
+  max-width: rem(510);
+  width: 100%;
+  @include mq(tab) {
+    padding-top: rem(20);
+    margin-left: rem(30);
+  }
+}
+
+.p-sub-policy__detail--number {
+  font-size: rem(20);
+  line-height: rem(29);
+  letter-spacing: rem(2);
+  margin-bottom: rem(24);
+  text-align: center;
+
+  @include mq(tab) {
+    font-size: rem(25);
+    line-height: rem(16);
+    letter-spacing: rem(0.5);
+    text-align: left;
+    margin-bottom: rem(40);
+  }
+}
+
+.p-sub-policy__detail--text {
+  line-height: rem(23.2);
+  letter-spacing: rem(2);
+  text-align: left;
+  max-width: rem(540);
+  width: 100%;
+  margin: auto;
+
+  @include mq(tab) {
+    line-height: rem(35);
+    letter-spacing: rem(0.5);
+  }
+}

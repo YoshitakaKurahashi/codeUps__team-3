@@ -1,0 +1,10 @@
+// 下層ページのメインビジュアル
+.p-blog-mainvisual {
+  background: url(/images/common/blogPage-MV.png) center center / cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+  @include mq(tab) {
+    background: url(/images/common/blogPage-MVPC.png) center center / cover;
+  }
+}

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
   <%- include('./common/_head') %>
-  <body class="about-page">
+  <body class="p-about-page">
 
     <!-- header -->
     <%- include('./common/_top-header') %> 
 
     <!-- 下層ページのMV -->
-    <%- include('./parts/_c-about-mv') %>
+    <div class="p-about-mainvisual">
+      <%- include('./parts/_c-underpage-mainvisual', {title:'企業概要'}) %> 
+    </div>
 
     <!-- パンくずリスト -->
     <div class="l-inner"><%- include('./parts/_c-breadcrumbs',{text:'企業概要'}) %></div>
