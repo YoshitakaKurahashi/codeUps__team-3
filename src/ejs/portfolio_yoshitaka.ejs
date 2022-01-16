@@ -7,7 +7,7 @@
     <%- include('./common/_top-header') %> 
 
     <!-- 下層ページのMV -->
-    <div class="p-blog-mainvisual mainviusal">
+    <div class="p-portfolio-mainvisual mainviusal">
       <%- include('./parts/_c-underpage-mainvisual', {title:'制作実績'}) %> 
     </div>
 
@@ -15,40 +15,38 @@
     <div class="l-inner"><%- include('./parts/_c-breadcrumbs',{text:'制作実績'}) %></div>
     <!-- /.l-inner -->
 
-    <section class="p-blog-under">
+    <section class="p-portfolio-under">
       <div class="l-inner">
         <!-- カテゴリ表示 -->
-        <div class="p-blog-under__category">
+        <div class="p-portfolio-under__category">
           <%- include('./parts/_c-category');  %>
         </div>
         <!-- /.p-blog-under__category -->
 
         <!-- ブログ一覧 -->
-        <div class="p-blog-under__contents">
-          <div class="p-blog__contents">
-            <% for (var i=1; i <= 8; i++) { %> 
-              <%- include('./parts/_c-blog-card',{
-              link:'#',
-              img:'./images/common/blog-img01.jpg',
+        <div class="p-portfolio-under__contents">
+          <div class="p-portfolio__contents">
+            <% for (var i=1; i <= 7; i++) { %> 
+              <%- include('./parts/_c-portfolio-card',{
+              portfolio__link:'#',
+              img:'./images/common/portfolio01.png',
               img__alt:'rectangle',
-              blog__title:'タイトルが入ります。タイトルが入ります。',
-              blog__text:'説明文が入ります。説明文が入ります。説明文が入ります。',
-              blog__category:'カテゴリ',
-              date1:'2021-07-20',
-              date2:'2021.07.20'
+              portfolio__name:'CodeUps株式会社',
+              category__link:'#',
+              portfolio__category:'カテゴリ1',
             }) %> 
           <% } %> 
         </div><!-- /.blog__contents -->
-        </div><!-- /.p-blog-under__contents -->
+        </div><!-- /.p-portfolio-under__contents -->
 
         <!-- ページネーション -->
-        <div class="p-blog-under__pagination">
+        <div class="p-portfolio-under__pagination">
           <%- include('./parts/_c-pagination') %>
-        </div><!-- /.p-blog-under__pagination -->
+        </div><!-- /.p-portfolio-under__pagination -->
       </div>
       <!-- /.l-inner -->
     </section>
-    <!-- /.p-blog-under -->
+    <!-- /.p-portfolio-under -->
 
     <%- include('./common/_contact') %>
 

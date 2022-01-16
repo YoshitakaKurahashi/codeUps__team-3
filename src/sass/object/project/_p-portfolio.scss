@@ -1,0 +1,8 @@
+.p-portfolio__contents {
+
+  @include mq(tab) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+}
