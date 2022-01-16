@@ -1,0 +1,19 @@
+.l-portfolio-card {
+  max-width: rem(540);
+  width: 100%;
+  margin: auto;
+
+  &:not(:last-child) {
+    margin-bottom: rem(24);
+  }
+
+  @include mq(tab) {
+    max-width: calc((100% - #{rem(25)} * 2) / 3);
+    width: 100%;
+    margin: 0;
+
+    &:not(:nth-child(3n)) {
+      margin-right: rem(20);
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.c-portfolio-card {
+  background: #ffffff;
+  display: block;
+  transition: all 0.5s ease;
+  color: #111111; // 後で消す。
+
+  &:hover {
+    background: #333333;
+
+    .c-portfolio-card__img {
+
+      img {
+        transform:scale(1.2, 1.2);
+        transition: all .5s ease;
+      }
+    }
+
+    .c-card-content__title,
+    .c-card-content__text,
+    .c-card-info__day {
+      color: #ffffff;
+    }
+  }
+}
+
+.c-portfolio-card__img {
+  width: 100%;
+  padding-top: 66.6%;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: all .5s ease;
+  }
+}
+
+.c-portfolio-card__contents {
+}
+
+.c-card-content {
+  padding: rem(5) rem(23) rem(16);
+  text-align: left;
+  transition: all 0.5s ease;
+  color: #333333;
+}
+
+.c-card-content__title {
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 3px;
+  margin-bottom: 3px;
+
+  @include mq(tab) {
+    letter-spacing: 1px;
+  }
+}
+
+.c-card-content__text {
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+
+  @include mq(tab) {
+    letter-spacing: 1px;
+    margin-bottom: 11px;
+  }
+}
+
+.c-card-content__info {
+  display: flex;
+  align-items: center;
+  font-size: rem(14);
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.c-card-info__category {
+  margin-right: auto;
+  // max-width: 70px;
+  // width: 100%;
+  text-align: center;
+  background: #ffea2e;
+  letter-spacing: rem(2.5);
+  padding-left: rem(7);
+  padding-right: rem(7);
+  display: inline-block;
+
+  @include mq(tab) {
+    letter-spacing: 1px;
+    padding-left: rem(3);
+    padding-right: rem(3);
+  }
+}
+
+.c-card-info__day {
+  transition: all 0.5s ease;
+  letter-spacing: 2px;
+
+  @include mq(tab) {
+    letter-spacing: 1px;
+  }
+}

@@ -23,10 +23,10 @@ jQuery(function ($) {
   }); // ヘッダー
 
   $(window).on('scroll', function () {
-    if ($('.slider1').height() < $(this).scrollTop()) {
-      $('.header').css('background', 'rgba(17,17,17,1)');
+    if ($('.mainviusal').height() < $(this).scrollTop()) {
+      $('.p-top-header').css('background', 'rgba(17,17,17,1)');
     } else {
-      $('.header').css('background', 'rgba(17,17,17,0.5)');
+      $('.p-top-header').css('background', 'rgba(17,17,17,0.5)');
     }
   }); //ドロワーメニュー
 
@@ -60,7 +60,7 @@ jQuery(function ($) {
       heroBottom;
 
   _window.on('scroll', function () {
-    heroBottom = $('.mainvisual').height();
+    heroBottom = $('.c-underpage-mainvisual').height();
 
     if (_window.scrollTop() > heroBottom) {
       _header.addClass('transform');

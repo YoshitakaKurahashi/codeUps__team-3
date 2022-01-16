@@ -1,17 +1,17 @@
 // Blog以下CSS
-.blog-under {
+.p-blog-under {
   padding-top: rem(85);
   padding-bottom: rem(120);
 }
 
-.blog-under__category {
+.p-blog-under__category {
   margin-bottom: rem(21);
 }
 
 .blog-category {
 }
 
-.blog-under__contents {
+.p-blog-under__contents {
   margin-bottom: rem(83);
 
   @include mq(tab) {
@@ -22,5 +22,5 @@
 .p-blog__contents {
 }
 
-.blog-under__pagination {
+.p-blog-under__pagination {
 }

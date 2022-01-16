@@ -25,10 +25,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // ヘッダー
   $(window).on('scroll', function () {
-    if ($('.slider1').height() < $(this).scrollTop()) {
-      $('.header').css('background', 'rgba(17,17,17,1)');
+    if ($('.mainviusal').height() < $(this).scrollTop()) {
+      $('.p-top-header').css('background', 'rgba(17,17,17,1)');
     } else {
-      $('.header').css('background', 'rgba(17,17,17,0.5)');
+      $('.p-top-header').css('background', 'rgba(17,17,17,0.5)');
     }
   });
 
@@ -60,19 +60,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // header固定
   var _window = $(window),
-    _header = $('.p-top-header'),
-    heroBottom;
+      _header = $('.p-top-header'),
+      heroBottom;
+
+      _window.on('scroll',function(){
+        heroBottom = $('.c-underpage-mainvisual').height();
+        if(_window.scrollTop() > heroBottom){
+            _header.addClass('transform');   
+        }
+        else{
+            _header.removeClass('transform');   
+        }
+      });
  
-_window.on('scroll',function(){
-    heroBottom = $('.mainvisual').height();
-    if(_window.scrollTop() > heroBottom){
-        _header.addClass('transform');   
-    }
-    else{
-        _header.removeClass('transform');   
-    }
-});
- 
-_window.trigger('scroll');
+      _window.trigger('scroll');
 
 });
