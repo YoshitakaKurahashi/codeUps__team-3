@@ -1,0 +1,99 @@
+
+
+
+@keyframes zoomUp {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+  }
+  
+  @keyframes zoomUp { /* 1.15倍させる指定 */
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+  }
+
+  .js-mainVisual {
+      margin: initial;
+  }
+  
+  .swiper-slide {
+    // // overflow: hidden;
+    // -webkit-backface-visibility: hidden;
+    // backface-visibility: hidden;
+    position: relative;
+    
+  }
+  
+  .swiper-slide-active .slide-img,
+  .swiper-slide-duplicate-active .slide-img,
+  .swiper-slide-prev .slide-img { /* 12秒かけて拡大させる */
+      -webkit-animation: zoomUp 12s linear 0s;
+      animation: zoomUp 12s linear 0s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+  }
+  
+  .slide-img {
+      background-repeat: no-repeat;
+      background-size: cover; 
+      background-position: center center; /* 背景画像は中央を軸に表示させる */
+      height: 100vh;
+    //   height: rem(770);
+    // height: rem(851); 
+    
+  }
+
+.slide-img img  {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.p-mv__titles {
+    font-weight: bold;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: rem(342);
+    width: 100%;
+    text-align: center;
+
+    @include mq(tab) {
+        max-width: rem(606);
+
+    }
+
+}
+
+.p-mv__title {
+    font-size: rem(28);
+    letter-spacing: rem(0.5);
+
+    @include mq(tab) {
+        font-size: rem(50);
+    }
+}
+
+.p-mv__subtitle {
+    font-size: rem(20);
+    margin-top: rem(10);
+
+    @include mq(tab) {
+        font-size: rem(25);
+        margin-top: rem(5);
+    }
+}
