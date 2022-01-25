@@ -1,6 +1,10 @@
 "use strict";
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 jQuery(function ($) {
+  var _Swiper;
+
   // この中であればWordpressでも「$」が使用可能になる
   var topBtn = $('.page-top');
   topBtn.hide(); // ボタンの表示設定
@@ -69,5 +73,16 @@ jQuery(function ($) {
     }
   });
 
-  _window.trigger('scroll');
+  _window.trigger('scroll'); //メインビジュアル画像ズーム
+
+
+  var swiper = new Swiper(".mySwiper", (_Swiper = {
+    loop: true,
+    effect: 'fade'
+  }, _defineProperty(_Swiper, "effect", "fade"), _defineProperty(_Swiper, "autoplay", {
+    delay: 4000,
+    //４秒後に次のスライドへ
+    disableOnInteraction: false //ユーザー側で操作してもスライドを止めない
+
+  }), _defineProperty(_Swiper, "speed", 2000), _defineProperty(_Swiper, "allowTouchMove", false), _Swiper));
 });
