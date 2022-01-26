@@ -626,6 +626,16 @@ summary {
 	width: 100%;
 }
 
+.l-portfolio-card {
+	margin: auto;
+	max-width: 33.75rem;
+	width: 100%;
+}
+
+.l-portfolio-card:not(:last-child) {
+	margin-bottom: 1.5rem;
+}
+
 .c-blog-card {
 	background: #ffffff;
 	color: #111111;
@@ -1080,6 +1090,95 @@ summary {
 	width: 100%;
 }
 
+
+.c-portfolio-card {
+	display: block;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	position: relative;
+	transition: all 0.5s ease;
+}
+
+.c-portfolio-card:hover .c-portfolio-card__img img {
+	transform: scale(1.2, 1.2);
+	transition: all 0.5s ease;
+}
+
+.c-portfolio-card:hover .c-portfolio-card__name {
+	color: rgba(255, 255, 255, 0.6);
+	transition: all 0.5s ease;
+}
+
+.c-portfolio-card__img {
+	margin-bottom: 0.75rem;
+	overflow: hidden;
+	padding-top: 66.6%;
+	position: relative;
+	width: 100%;
+}
+
+.c-portfolio-card__img img {
+	-o-object-fit: cover;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	transition: all 0.5s ease;
+}
+
+.c-portfolio-card__name {
+	color: #FFFFFF;
+	font-size: 1.25rem;
+	font-weight: 500;
+	letter-spacing: 0.125rem;
+	text-align: center;
+	transition: all 0.5s ease;
+}
+
+.c-portfolio-card__category {
+	background: #111111;
+	color: #FFFFFF;
+	letter-spacing: 0.125rem;
+	line-height: 1;
+	padding: 0.5rem 1.25rem 0.5625rem;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	z-index: 10;
+}
+
+.c-section-title__blog {
+	bottom: 0;
+	font-size: 1.25rem;
+	font-weight: 400;
+	left: 50%;
+	letter-spacing: 0.125rem;
+	position: absolute;
+	transform: translateX(-50%);
+}
+
+.c-section-title__contact {
+	bottom: 0;
+	font-size: 1.25rem;
+	font-weight: 400;
+	left: 50%;
+	letter-spacing: 0.125rem;
+	position: absolute;
+	transform: translateX(-50%);
+}
+
+.c-section-title__content {
+	bottom: 0;
+	font-size: 1.25rem;
+	font-weight: 400;
+	left: 50%;
+	letter-spacing: 0.125rem;
+	position: absolute;
+	transform: translateX(-50%);
+}
+
+
 .c-section-title__english {
 	color: #F9F871;
 	font-family: "Noto Serif JP";
@@ -1195,16 +1294,16 @@ summary {
 	z-index: 1;
 }
 
-.blog-under {
+.p-blog-under {
 	padding-bottom: 7.5rem;
 	padding-top: 5.3125rem;
 }
 
-.blog-under__category {
+.p-blog-under__category {
 	margin-bottom: 1.3125rem;
 }
 
-.blog-under__contents {
+.p-blog-under__contents {
 	margin-bottom: 5.1875rem;
 }
 
@@ -1572,6 +1671,32 @@ summary {
 	position: relative;
 }
 
+
+.p-portfolio-mainvisual {
+	background: url(/images/common/portfolioPage-MV.png) center center/cover;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.p-portfolio-under {
+	padding-bottom: 7.5rem;
+	padding-top: 5.3125rem;
+}
+
+.p-portfolio-under__category {
+	margin-bottom: 1.3125rem;
+}
+
+.p-portfolio-under__contents {
+	margin-bottom: 5.1875rem;
+}
+
+.p-section-title__left {
+	margin-right: auto;
+	text-align: left;
+}
+
+
 .p-section-title {
 	margin: auto;
 	max-width: 37.5rem;
@@ -1741,8 +1866,14 @@ html {
 	margin-top: 4.3125rem;
 }
 
-.l-pagination {
-	margin-bottom: 9.375rem;
+.l-portfolio-card {
+	margin: 0;
+	max-width: calc((100% - 3rem) / 2);
+	width: 100%;
+}
+
+.l-portfolio-card:not(:nth-child(2n)) {
+	margin-right: 3rem;
 }
 
 .c-card-content__title {
@@ -1943,6 +2074,22 @@ html {
 	transition: .3s;
 }
 
+.c-portfolio-card {
+	margin: 0;
+}
+
+.c-section-title__blog {
+	font-size: 1.875rem;
+}
+
+.c-section-title__contact {
+	font-size: 1.875rem;
+}
+
+.c-section-title__content {
+	font-size: 1.875rem;
+}
+
 .c-section-title__english {
 	font-size: 6.875rem;
 	line-height: .9;
@@ -2025,7 +2172,7 @@ html {
 	background: url(/images/common/blogPage-MVPC.png) center center/cover;
 }
 
-.blog-under__contents {
+.p-blog-under__contents {
 	margin-bottom: 5rem;
 }
 
@@ -2248,6 +2395,20 @@ html {
 .p-news__contents {
 	display: flex;
 	position: static;
+}
+
+.p-portfolio-mainvisual {
+	background: url(/images/common/portfolioPage-MVPC.png) center center/cover;
+}
+
+.p-portfolio-under__contents {
+	margin-bottom: 5rem;
+}
+
+.p-portfolio__contents {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
 }
 
 .p-section-title {

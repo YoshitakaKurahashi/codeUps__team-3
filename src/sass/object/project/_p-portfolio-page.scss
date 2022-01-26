@@ -1,16 +1,13 @@
-.p-blog-under {
+.p-portfolio-under {
   padding-top: rem(85);
   padding-bottom: rem(120);
 }
 
-.p-blog-under__category {
+.p-portfolio-under__category {
   margin-bottom: rem(21);
 }
 
-.blog-category {
-}
-
-.p-blog-under__contents {
+.p-portfolio-under__contents {
   margin-bottom: rem(83);
 
   @include mq(tab) {
@@ -18,8 +15,8 @@
   }
 }
 
-.p-blog__contents {
+.p-portfolio__contents {
 }
 
-.p-blog-under__pagination {
+.p-portfolio-under__pagination {
 }
