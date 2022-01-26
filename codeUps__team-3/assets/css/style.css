@@ -590,6 +590,10 @@ summary {
 	margin-top: 7.5rem;
 }
 
+.l-content {
+	margin-top: 5.9375rem;
+}
+
 .l-footer {
 	padding: 52px 20px 54px;
 }
@@ -1086,6 +1090,7 @@ summary {
 	width: 100%;
 }
 
+
 .c-portfolio-card {
 	display: block;
 	margin-left: calc(50% - 50vw);
@@ -1173,6 +1178,7 @@ summary {
 	transform: translateX(-50%);
 }
 
+
 .c-section-title__english {
 	color: #F9F871;
 	font-family: "Noto Serif JP";
@@ -1182,17 +1188,7 @@ summary {
 	opacity: 0.2;
 }
 
-.c-section-title__overview {
-	bottom: 0;
-	font-size: 1.25rem;
-	font-weight: 400;
-	left: 50%;
-	letter-spacing: 0.125rem;
-	position: absolute;
-	transform: translateX(-50%);
-}
-
-.c-section-title__works {
+.c-section-title__japanese {
 	bottom: 0;
 	font-size: 1.25rem;
 	font-weight: 400;
@@ -1357,6 +1353,83 @@ summary {
 
 .p-contact__text {
 	padding: 1.25rem 0 2.5rem;
+}
+
+.p-content__inner {
+	position: relative;
+}
+
+.p-content__inner::after {
+	background: #F9F871;
+	content: '';
+	height: 0.0625rem;
+	left: 0;
+	position: absolute;
+	top: -1.5625rem;
+	transform: skewY(61.09deg);
+	transform-origin: top left;
+	width: 100%;
+	z-index: -1;
+}
+
+.p-content__cards {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 2.875rem;
+	width: 100%;
+}
+
+.p-content__card {
+	position: relative;
+	width: calc(100% * 1 / 2);
+	z-index: 2;
+}
+
+.p-content__card-image {
+	position: relative;
+}
+
+.p-content__card-image::before {
+	content: "";
+	display: block;
+	padding-top: 89.3617%;
+}
+
+.p-content__card-image::after {
+	background-color: #000;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: .5;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.p-content__card-image img {
+	-o-object-fit: cover;
+	-o-object-position: center;
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-content__card-title {
+	font-size: 1.25rem;
+	left: 50%;
+	letter-spacing: 0.125rem;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	z-index: 10;
 }
 
 .p-footer__contents {
@@ -1558,6 +1631,7 @@ summary {
 	height: 100%;
 	object-fit: cover;
 	object-position: center;
+	width: 100%;
 }
 
 .p-mv__titles {
@@ -1597,6 +1671,7 @@ summary {
 	position: relative;
 }
 
+
 .p-portfolio-mainvisual {
 	background: url(/images/common/portfolioPage-MV.png) center center/cover;
 	background-repeat: no-repeat;
@@ -1620,6 +1695,7 @@ summary {
 	margin-right: auto;
 	text-align: left;
 }
+
 
 .p-section-title {
 	margin: auto;
@@ -1770,6 +1846,10 @@ html {
 
 .l-contact {
 	margin-top: 9.375rem;
+}
+
+.l-content {
+	margin-top: 10.625rem;
 }
 
 .l-footer {
@@ -2015,11 +2095,8 @@ html {
 	line-height: .9;
 }
 
-.c-section-title__overview {
-	font-size: 1.875rem;
-}
-
-.c-section-title__works {
+.c-section-title__japanese {
+	bottom: 2.5rem;
 	font-size: 1.875rem;
 }
 
@@ -2128,6 +2205,43 @@ html {
 	max-width: 44.6875rem;
 	padding: 0.9375rem 0 3.75rem;
 	width: 100%;
+}
+
+.p-content__inner::after {
+	top: -3.75rem;
+	transform: skewY(45deg);
+}
+
+.p-content__cards {
+	padding-top: 0;
+}
+
+.p-content__card {
+	background: #FFFFFF;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 25%;
+}
+
+.p-content__card-image {
+	cursor: pointer;
+	transition-duration: 0.3s;
+	width: 100%;
+}
+
+.p-content__card-image:hover {
+	opacity: 0.6;
+	transition-duration: 0.3s;
+}
+
+.p-content__card-image::before {
+	padding-top: 99.6875%;
+}
+
+.p-content__card-title {
+	font-size: 1.5625rem;
+	max-width: 13.75rem;
 }
 
 .p-footer__contents {
@@ -2298,8 +2412,8 @@ html {
 }
 
 .p-section-title {
-	margin: initial;
-	max-width: 68.75rem;
+	max-width: 76.25rem;
+	padding-left: 1.875rem;
 	text-align: left;
 }
 

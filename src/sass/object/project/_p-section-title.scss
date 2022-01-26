@@ -6,8 +6,8 @@
     margin: auto;
 
     @include mq(tab) {
+        max-width: rem(1220);
         text-align: left;
-        margin: initial;
-        max-width: rem(1100);
+        padding-left: rem(30);
     }
 }
