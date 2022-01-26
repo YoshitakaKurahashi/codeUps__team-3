@@ -1088,6 +1088,8 @@ summary {
 
 .c-portfolio-card {
 	display: block;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
 	position: relative;
 	transition: all 0.5s ease;
 }
@@ -1936,6 +1938,10 @@ html {
 	color: #F9F871;
 	cursor: pointer;
 	transition: .3s;
+}
+
+.c-portfolio-card {
+	margin: 0;
 }
 
 .c-section-title__blog {

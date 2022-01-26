@@ -2,6 +2,12 @@
   display: block;
   transition: all 0.5s ease;
   position: relative;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+
+  @include mq(tab) {
+    margin: 0;
+  }
 
   &:hover {
     .c-portfolio-card__img {
@@ -25,19 +31,15 @@
   overflow: hidden;
   margin-bottom: rem(12);
 
+
   img {
     position: absolute;
     top: 0;
     left: 0;
     object-fit: cover;
     transition: all 0.5s ease;
-    // margin-right: calc(50% - 50vw);
-    // margin-left: calc(50% - 50vw);
-
-    // @include mq(tab) {
-    //   margin-right: 0;
-    //   margin-left: 0;
-    // }
+    // margin-right: calc(#{rem(-20)});
+    // margin-left: calc(#{rem(-20)});
   }
 }
 
