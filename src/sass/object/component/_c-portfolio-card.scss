@@ -1,0 +1,66 @@
+.c-portfolio-card {
+  display: block;
+  transition: all 0.5s ease;
+  position: relative;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+
+  @include mq(tab) {
+    margin: 0;
+  }
+
+  &:hover {
+    .c-portfolio-card__img {
+      img {
+        transform: scale(1.2, 1.2);
+        transition: all 0.5s ease;
+      }
+    }
+
+    .c-portfolio-card__name {
+      color: rgba($color: $text-color, $alpha: 0.6);
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+.c-portfolio-card__img {
+  width: 100%;
+  padding-top: 66.6%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: rem(12);
+
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: all 0.5s ease;
+    // margin-right: calc(#{rem(-20)});
+    // margin-left: calc(#{rem(-20)});
+  }
+}
+
+.c-portfolio-card__name {
+  font-size: rem(20);
+  font-weight: 500;
+  letter-spacing: rem(2);
+  color: $text-color;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.c-portfolio-card__category {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $background;
+  color: $text-color;
+  line-height: 1;
+  letter-spacing: rem(2);
+  text-align: center;
+  padding: rem(8) rem(20) rem(9);
+  z-index: 10;
+}

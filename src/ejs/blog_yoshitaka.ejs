@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
   <%- include('./common/_head') %>
-  <body class="blog-page">
+  <body class="p-blog-page">
 
     <!-- header -->
     <%- include('./common/_top-header') %> 
 
     <!-- 下層ページのMV -->
-    <div class="p-blog-mainvisual">
+    <div class="p-blog-mainvisual mainviusal">
       <%- include('./parts/_c-underpage-mainvisual', {title:'ブログ'}) %> 
     </div>
 
@@ -15,16 +15,16 @@
     <div class="l-inner"><%- include('./parts/_c-breadcrumbs',{text:'ブログ記事一覧'}) %></div>
     <!-- /.l-inner -->
 
-    <section class="blog-under">
+    <section class="p-blog-under">
       <div class="l-inner">
         <!-- カテゴリ表示 -->
-        <div class="blog-under__category">
+        <div class="p-blog-under__category">
           <%- include('./parts/_c-category');  %>
         </div>
-        <!-- /.blog-under__category -->
+        <!-- /.p-blog-under__category -->
 
         <!-- ブログ一覧 -->
-        <div class="blog-under__contents">
+        <div class="p-blog-under__contents">
           <div class="p-blog__contents">
             <% for (var i=1; i <= 8; i++) { %> 
               <%- include('./parts/_c-blog-card',{
@@ -39,16 +39,16 @@
             }) %> 
           <% } %> 
         </div><!-- /.blog__contents -->
-        </div><!-- /.blog-under__contents -->
+        </div><!-- /.p-blog-under__contents -->
 
         <!-- ページネーション -->
-        <div class="blog-under__pagination">
+        <div class="p-blog-under__pagination">
           <%- include('./parts/_c-pagination') %>
-        </div><!-- /.blog-under__pagination -->
+        </div><!-- /.p-blog-under__pagination -->
       </div>
       <!-- /.l-inner -->
     </section>
-    <!-- /.blog-under -->
+    <!-- /.p-blog-under -->
 
     <%- include('./common/_contact') %>
 
