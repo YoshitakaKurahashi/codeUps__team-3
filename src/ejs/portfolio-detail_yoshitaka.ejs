@@ -7,69 +7,74 @@
     <%- include('./common/_top-header') %> 
 
     <!-- 下層ページのMV -->
-    <div class="p-blog-detail-mainvisual mainviusal">
+    <div class="p-details-mainvisual mainviusal">
       <%- include('./parts/_c-underpage-mainvisual', {title:'企業概要'}) %> 
     </div>
 
     <!-- パンくずリスト -->
     <div class="l-inner">
-      <%- include('./parts/_c-breadcrumbs',{text:'ブログ記事一覧'}) %>
+      <%- include('./parts/_c-breadcrumbs',{text:'制作実績詳細'}) %>
     </div>
-    <!-- /.l-inner -->
 
     <!-- ブログ詳細 -->
-    <section class="p-blog-detail l-inner">
-      <div class="p-blog-detail__contents c-blog">
-        <h2 class="c-blog__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</h2>
-        <!-- /.blog__title -->
-        <ul class="c-blog__infomation">
-          <li class="c-blog__days">
+    <section class="p-portfolio-detail l-inner">
+      <div class="p-portfolio-detail__contents c-portfolio">
+        <h2 class="c-portfolio__title">〇〇株式会社　制作実績</h2>
+        <!-- /.portfolio__title -->
+        <ul class="c-portfolio__infomation">
+          <li class="c-portfolio__days">
             2020/06/13
           </li>
-          <!-- /.blog__days -->
-          <li class="c-blog__category"><a href="">カテゴリ１</a></li>
-          <!-- /.blog__category -->
+          <!-- /.portfolio__days -->
+          <li class="c-portfolio__category"><a href="">カテゴリ１</a></li>
+          <!-- /.portfolio__category -->
         </ul>
-        <!-- /.blog__infomation -->
-        <div class="c-blog__thumbnail"><img src="./images/common/thumbnail01.png" alt="" /></div>
-        <!-- /.blog__thumbnail -->
-        <p class="c-blog__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-        <!-- /.blog__text -->
-        <div class="c-blog__heading">見出し２</div>
-        <!-- /.blog__heading -->
-        <p class="c-blog__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-        <!-- /.blog__text -->
-        <div class="c-blog__subheading">見出し３見出し３見出し３見出し３</div>
-        <!-- /.blog__subheading -->
-        <p class="c-blog__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-        <!-- /.blog__text -->
-        <div class="c-blog__thumbnail"><img src="./images/common/thumbnail02.png" alt="" /></div>
-        <!-- /.blog__thumbnail -->
-        <ul class="c-blog__lists">
-          <li class="c-blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
-          <li class="c-blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
-          <li class="c-blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
-          <li class="c-blog__list">・リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
-        </ul><!-- /.blog__lists -->
-        <ul class="c-blog__lists">
-          <li class="c-blog__list">1 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
-          <li class="c-blog__list">2 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
-          <li class="c-blog__list">3 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
-          <li class="c-blog__list">4 リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li><!-- /.blog__list -->
-        </ul><!-- /.blog__lists -->
+        <!-- /.portfolio__infomation -->
+        <div class="c-portfolio__thumbnail"><img src="./images/common/thumbnail01.png" alt="" /></div>
+        <!-- /.portfolio__thumbnail -->
+        <div class="c-portfolio__points c-point">
+          <div class="c-point__title">
+            制作のポイント
+          </div>
+          <!-- /.c-point__title -->
+          <p class="c-point__text">
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          </p>
+          <!-- /.c-point__text -->
+        </div>
+        <div class="c-portfolio__points c-point">
+          <div class="c-point__title">
+            デザインのポイント
+          </div>
+          <!-- /.c-point__title -->
+          <p class="c-point__text">
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          </p>
+          <!-- /.c-point__text -->
+        </div>
+        <div class="c-portfolio__points c-point">
+          <div class="c-point__title">
+            その他
+          </div>
+          <!-- /.c-point__title -->
+          <p class="c-point__text">
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          </p>
+          <!-- /.c-point__text -->
+        </div>
       </div>
       <!-- /.blog-detail__contents -->
-      <div class="p-blog-detail__pagination">
+      <div class="p-portfolio-detail__pagination">
         <%- include('./parts/_c-pagination02') %> 
       </div>
       <!-- /.blog-detail__pagination -->
-      <div class="p-blog-detail__relation">
+      <div class="p-portfolio-detail__relation">
         <div class="relation__title">関連記事</div><!-- /.relation__title -->
-        <div class="relation__blogs">
+        <div class="relation__portfolios">
           <% for (var i=1; i <= 4; i++) { %> 
             <%- include('./parts/_c-blog-card',{
             link:'#',
-            img:'./images/common/blog-img01.jpg',
+            img:'./images/common/portfolio01.png',
             img__alt:'rectangle',
             blog__title:'タイトルが入ります。タイトルが入ります。',
             blog__text:'説明文が入ります。説明文が入ります。説明文が入ります。',

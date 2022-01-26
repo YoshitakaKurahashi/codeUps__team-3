@@ -1086,6 +1086,38 @@ summary {
 	width: 100%;
 }
 
+.c-point {
+	border: 1px solid #ffff;
+	max-width: 31.25rem;
+	padding: 3.5rem 0.625rem 2.0625rem;
+	position: relative;
+	width: 100%;
+}
+
+.c-point:not(:last-child) {
+	margin-bottom: 3.375rem;
+}
+
+.c-point__title {
+	background: #111111;
+	border: 1px solid #ffffff;
+	border-radius: 2rem;
+	display: inline-block;
+	font-size: 1.25rem;
+	left: 1.5rem;
+	letter-spacing: 0.025rem;
+	line-height: 1;
+	padding: 0.5rem 1.5rem 0.5625rem;
+	position: absolute;
+	top: -1.4375rem;
+}
+
+.c-point__text {
+	font-size: 1rem;
+	letter-spacing: 0.025rem;
+	line-height: 2.19;
+}
+
 .c-portfolio-card {
 	display: block;
 	margin-left: calc(50% - 50vw);
@@ -1141,6 +1173,118 @@ summary {
 	text-align: center;
 	top: 0;
 	z-index: 10;
+}
+
+.c-portfolio__title {
+	font-size: 1.25rem;
+	letter-spacing: 0.025rem;
+	line-height: 2.1875rem;
+	margin-bottom: 1rem;
+}
+
+.c-portfolio__infomation {
+	display: inline-block;
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
+.c-portfolio__days {
+	display: inline-block;
+	letter-spacing: 0.025rem;
+	line-height: 2.01875rem;
+	margin-right: 1.5rem;
+}
+
+.c-portfolio__category {
+	border: 1px solid #ffffff;
+	display: inline-block;
+	max-width: 8rem;
+	text-align: center;
+	width: 100%;
+}
+
+.c-portfolio__category a {
+	display: inline-block;
+	letter-spacing: 0.02em;
+	line-height: 1.45rem;
+	padding-bottom: 0.5625rem;
+	padding-top: 0.5rem;
+}
+
+.c-portfolio__thumbnail {
+	margin-bottom: 3.5rem;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+}
+
+.c-portfolio__thumbnail img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+.c-portfolio__text {
+	letter-spacing: 0.025rem;
+	line-height: 2.1875rem;
+	margin-bottom: 1.5rem;
+	text-align: left;
+}
+
+.c-portfolio__heading {
+	font-size: 1.25rem;
+	letter-spacing: 0.125rem;
+	line-height: 1.8125rem;
+	margin-bottom: 1.5rem;
+	padding-left: 0.5625rem;
+	position: relative;
+}
+
+.c-portfolio__heading::before {
+	background: #c4c4c4;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 0.1875rem;
+}
+
+.c-portfolio__subheading {
+	display: inline-block;
+	font-size: 1.125rem;
+	letter-spacing: 0.125rem;
+	line-height: 1.625rem;
+	margin-bottom: 1.5rem;
+	padding-bottom: 0.1875rem;
+	position: relative;
+}
+
+.c-portfolio__subheading::after {
+	background: #ffffff;
+	bottom: 0;
+	content: "";
+	height: 0.1875rem;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.c-portfolio__lists {
+	display: inline-block;
+	margin-bottom: 1.5rem;
+}
+
+.c-portfolio__list {
+	display: inline-block;
+	letter-spacing: 0.025rem;
+	line-height: 2.1875rem;
+}
+
+.p-portfolio-detail__pagination {
+	margin: auto;
+	margin-bottom: 7.5rem;
+	max-width: 19.3125rem;
+	width: 100%;
 }
 
 .c-section-title__blog {
@@ -1279,7 +1423,7 @@ summary {
 	width: 100%;
 }
 
-.p-blog-detail-mainvisual {
+.p-details-mainvisual {
 	display: none;
 }
 
@@ -1595,6 +1739,15 @@ summary {
 
 .p-news__contents {
 	position: relative;
+}
+
+.p-portfolio-detail {
+	padding-bottom: 7.5rem;
+	padding-top: 4.875rem;
+}
+
+.p-portfolio-detail__contents {
+	margin-bottom: 3.5rem;
 }
 
 .p-portfolio-mainvisual {
@@ -1998,6 +2151,61 @@ html {
 	margin: 0;
 }
 
+.c-portfolio__title {
+	font-size: 1.4375rem;
+	margin-bottom: 2rem;
+}
+
+.c-portfolio__infomation {
+	margin-bottom: 2rem;
+}
+
+.c-portfolio__thumbnail {
+	margin: auto;
+	margin-bottom: 2rem;
+}
+
+.c-portfolio__text {
+	margin-bottom: 2rem;
+}
+
+.c-portfolio__heading {
+	margin-bottom: 2rem;
+	padding-left: 0.4375rem;
+}
+
+.c-portfolio__lists {
+	margin-bottom: 2rem;
+}
+
+.p-portfolio-detail__pagination {
+	margin-bottom: 6.5rem;
+}
+
+.relation__portfolios {
+	display: flex;
+	justify-content: space-between;
+}
+
+.relation__portfolios .l-portfolio-card {
+	margin: 0;
+	max-width: calc((100% - 2rem * 3) / 4);
+}
+
+.relation__portfolios .c-card-content {
+	padding: 0.1875rem 0.4375rem 0.875rem 0.5625rem;
+}
+
+.relation__portfolios .c-card-content__text {
+	display: none;
+}
+
+.relation__portfolios .c-card-content__title {
+	font-size: 0.875rem;
+	letter-spacing: 0.0625rem;
+	line-height: 2.1875rem;
+}
+
 .c-section-title__blog {
 	font-size: 1.875rem;
 }
@@ -2281,6 +2489,13 @@ html {
 .p-news__contents {
 	display: flex;
 	position: static;
+}
+
+.p-portfolio-detail__contents {
+	margin: auto;
+	margin-bottom: 4.5rem;
+	max-width: 50rem;
+	width: 100%;
 }
 
 .p-portfolio-mainvisual {

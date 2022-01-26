@@ -1,0 +1,15 @@
+.p-portfolio-detail {
+  padding-top: rem(78);
+  padding-bottom: rem(120);
+}
+
+.p-portfolio-detail__contents {
+  margin-bottom: rem(56);
+
+  @include mq(tab) {
+    max-width: rem(800);
+    width: 100%;
+    margin: auto;
+    margin-bottom: rem(72);
+  }
+}

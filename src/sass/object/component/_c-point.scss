@@ -1,0 +1,31 @@
+.c-point {
+  max-width: rem(500);
+  width: 100%;
+  padding: rem(56) rem(10) rem(33);
+  border: 1px solid #ffff;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: rem(54);
+  }
+}
+
+.c-point__title {
+  display: inline-block;
+  font-size: rem(20);
+  letter-spacing: rem(0.4);
+  line-height: 1;
+  border: 1px solid #ffffff;
+  padding: rem(8) rem(24) rem(9);
+  border-radius: rem(32);
+  position: absolute;
+  left: rem(24);
+  top: rem(-23);
+  background: #111111;
+}
+
+.c-point__text {
+  font-size: rem(16);
+  letter-spacing: rem(0.4);
+  line-height: 2.19;
+}
