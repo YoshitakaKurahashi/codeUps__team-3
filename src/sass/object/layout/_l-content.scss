@@ -1,0 +1,7 @@
+.l-content {
+    margin-top: rem(95);
+
+    @include mq(tab) {
+        margin-top: rem(170);
+    }
+}
