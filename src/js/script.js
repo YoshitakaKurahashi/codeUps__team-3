@@ -75,4 +75,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
  
       _window.trigger('scroll');
 
+
+//メインビジュアル画像ズーム
+
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  effect: 'fade',
+  effect: "fade", //フェードの指定
+autoplay: {
+  delay: 4000, //４秒後に次のスライドへ
+  disableOnInteraction: false //ユーザー側で操作してもスライドを止めない
+},
+speed: 2000, //２秒かけてフェードで切り替わる
+allowTouchMove: false,//マウスでのスワイプを禁止
+  
+});
+
 });
