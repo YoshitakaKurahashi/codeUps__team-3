@@ -5,26 +5,22 @@
 
     <%- include('./mv_yuichi') %>
 
-
-    <p>aaaaa</p>
-
-    <section class="l-news p-news">
-      <div class="p-news__inner l-inner">
-        <div class="l-news__container p-news__container">
-          <%- include('./common/_news-contents') %>
-          <div class="p-news__btn">
-            <%- include('./parts/_c-news__btn',{text:'すべて見る', link:'news_yuichi.html'}) %>
-          </div><!-- /p-news__btn -->
-        </div><!-- /p-news__container -->
-      </div><!-- /l-news -->
+    <section class="l-top-news">
+      <%- include('./parts/_p-top-news') %>
     </section><!-- /l- -->
+
+    <section class="l-content">
+        <%- include('./parts/_p-content') %>
+    </section>
+
+    <section class="l-works p-works">
+
+    </section>
+
 
       <%- include('./parts/_c-btn',{text:'詳しく見る', link:'#'}) %>
 
-    
-      
 
-      
       <div class="p-section-title">
         <%- include('./parts/_c-section-title__english',{text:'Blog'}) %>
         <%- include('./parts/_c-section-title__blog',{text:'ブログ'}) %>

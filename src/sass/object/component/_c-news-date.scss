@@ -1,0 +1,6 @@
+.c-news-date {
+    font-size: rem(16);
+    @include mq(tab) {
+        padding-top: 0;
+    }
+}
