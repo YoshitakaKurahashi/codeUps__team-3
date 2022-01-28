@@ -18,6 +18,7 @@
 .p-top-content__title .c-section-title-bg {
   margin-top: rem(-63);
   @include mq(tab) {
+    margin-top: rem(-47);
     text-align: left;
   }
 }

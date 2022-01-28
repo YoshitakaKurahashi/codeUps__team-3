@@ -84,5 +84,16 @@ jQuery(function ($) {
     //４秒後に次のスライドへ
     disableOnInteraction: false //ユーザー側で操作してもスライドを止めない
 
-  }), _defineProperty(_Swiper, "speed", 2000), _defineProperty(_Swiper, "allowTouchMove", false), _Swiper));
+  }), _defineProperty(_Swiper, "speed", 2000), _defineProperty(_Swiper, "allowTouchMove", false), _Swiper)); //トップページworksのswiperを制御
+
+  var swiper1 = new Swiper('.swiper1', {
+    effect: 'slide',
+    autoplay: {
+      delay: 2000
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination"
+    }
+  });
 });

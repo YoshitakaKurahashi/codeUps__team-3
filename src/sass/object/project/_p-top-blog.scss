@@ -1,6 +1,32 @@
+
+.p-top-blog__title {
+  text-align: center;
+}
+
+.p-top-blog__title .c-section-title-bg {
+  margin-top: rem(-63);
+  @include mq(tab) {
+    text-align: right;
+    margin-top: rem(-64);
+  }
+}
+
 .p-top-blog__contents {
+  margin-top: rem(82);
   @include mq(tab) {
     display: flex;
     align-items: center;
+    margin-top: initial;
+  }
+}
+
+.p-top-blog__btn {
+  margin-top: rem(23);
+}
+
+.p-top-blog__btn .c-btn {
+  @include mq(tab) {
+    font-size: rem(16);
+    padding: rem(16) rem(6);
   }
 }

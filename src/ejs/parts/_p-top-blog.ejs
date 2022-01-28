@@ -1,0 +1,18 @@
+<div class="p-top-blog">
+  <div class="p-top-blog__inner l-inner">
+    <div class="p-top-blog__title">
+      <%- include('./_c-section-title', {text:'ブログ'}) %>
+        <%- include('./_c-section-title-bg', {text:'Blog'}) %>
+    </div>
+    <div class="p-top-blog__contents">
+      <% for (var i=1; i <=3; i++) { %>
+        <%- include('./_c-blog-card',{ link:'#', img:'./images/common/blog-img01.jpg', img__alt:'rectangle',
+          blog__title:'タイトルが入ります。タイトルが入ります。', blog__text:'説明文が入ります。説明文が入ります。説明文が入ります。', blog__category:'カテゴリ',
+          date1:'2021-07-20', date2:'2021.07.20' }) %>
+          <% } %>
+    </div><!-- /.blog__contents -->
+    <div class="p-top-blog__btn">
+      <%- include('./_c-btn',{text:'詳しく見る', link:'blog_yoshitaka.html'}) %>
+    </div>
+  </div>
+</div>

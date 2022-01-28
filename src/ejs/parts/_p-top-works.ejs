@@ -6,12 +6,25 @@
     </div>
   </div>
   <div class="p-top-works__card">
-    <figure class="p-top-works__img">
-      <img src="<%= img %>" alt="<%= img_alt %>">
-    </figure>
+    <div class="p-top-works__swiper swiper1">
+      <div class="p-top-works__container swiper-wrapper">
+        <figure class="p-top-works__img swiper-slide">
+          <img src="../images/common/img_top-works1.jpg" alt="">
+        </figure>
+        <figure class="p-top-works__img swiper-slide">
+          <img src="../images/common/img_top-works2.jpg" alt="">
+        </figure>
+        <figure class="p-top-works__img swiper-slide">
+          <img src="../images/common/img_top-works3.jpg" alt="">
+        </figure>
+      </div>
+      <div class="p-top-works__pagination swiper-pagination"></div>
+    </div>
     <div class="p-top-works__body">
       <h3 class="p-top-works__title">メインタイトルが入ります。</h3>
-      <p class="p-top-works__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+      <p class="p-top-works__text">
+        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+      </p>
       <div class="p-top-works__btn">
         <%- include('./_c-btn',{text:'詳しく見る', link:'service_yoshitaka.html'}) %>
       </div>

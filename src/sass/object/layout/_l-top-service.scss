@@ -1,3 +1,6 @@
 .l-top-service {
   margin-top: rem(125);
+  @include mq(tab) {
+    margin-top: rem(207);
+  }
 }

@@ -11,13 +11,14 @@
   }
 }
 
-.p-top-service__title {
+.p-top-service__title .c-section-title {
   text-align: center;
 }
 
 .p-top-service__title .c-section-title-bg {
   margin-top: rem(-63);
   @include mq(tab) {
+    margin-top: rem(-56);
     text-align: left;
   }
 }
@@ -25,19 +26,30 @@
 .p-top-service__card {
   margin-top: rem(66);
   @include mq(tab) {
+    padding-right: rem(90);
     margin-top: initial;
+    display: flex;
+    align-items: center;
   }
 }
 
 .p-top-service__img {
 	width: 100%;
 	position: relative;
+  @include mq(tab) {
+    max-width: rem(557);
+    margin-left: rem(-263);
+    order: 2;
+  }
 }
 
 .p-top-service__img::before {
 	content: "";
 	display: block;
-	padding-top: 69.6%; //高さ/幅*100
+	padding-top: 69.6%;
+  @include mq(tab) {
+    padding-top: 69.83842%;
+  }
 }
 
 .p-top-service__img img {
@@ -54,20 +66,46 @@
 .p-top-service__body {
   background-color: $background-color;
   padding: rem(28) rem(20) rem(21) rem(20);
+  @include mq(tab) {
+    width: 100%;
+    padding: rem(114) rem(290) rem(117) rem(89);
+    order: 1;
+  }
 }
 
 .p-top-service__title {
   text-align: center;
   line-height: 1;
   letter-spacing: 0.2em;
+  @include mq(tab) {
+    text-align: left;
+    font-size: rem(25);
+    letter-spacing: 0.02em;
+  }
 }
 
 .p-top-service__text {
   margin-top: rem(29);
   letter-spacing: 0.12em;
   line-height: 1.45;
+  @include mq(tab) {
+    margin-top: rem(43);
+    letter-spacing: 0.04em;
+    line-height: 2.2;
+  }
 }
 
 .p-top-service__btn {
   margin-top: rem(25);
+  @include mq(tab) {
+    margin-top: rem(46);
+  }
+}
+
+.p-top-service__btn .c-btn {
+  @include mq(tab) {
+    margin-left: initial;
+    font-size: rem(16);
+    padding: rem(16) rem(6);
+  }
 }
