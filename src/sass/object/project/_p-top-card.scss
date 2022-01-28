@@ -1,0 +1,42 @@
+.p-top-card__img {
+	width: 100%;
+	position: relative;
+}
+
+.p-top-card__img::before {
+	content: "";
+	display: block;
+	padding-top: 69.6%; //高さ/幅*100
+}
+
+.p-top-card__img img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-position: center;
+}
+
+.p-top-card__body {
+  background-color: $background-color;
+  padding: rem(28) rem(20) rem(21) rem(20);
+}
+
+.p-top-card__title {
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0.2em;
+}
+
+.p-top-card__text {
+  margin-top: rem(29);
+  letter-spacing: 0.12em;
+  line-height: 1.45;
+}
+
+.p-top-card__btn {
+  margin-top: rem(25);
+}

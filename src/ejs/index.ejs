@@ -1,66 +1,45 @@
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('./common/_head') %>
+
   <body>
 
     <%- include('./mv_yuichi') %>
 
-    <section class="l-top-news">
-      <%- include('./parts/_p-top-news') %>
-    </section><!-- /l- -->
+      <section class="l-top-news">
+        <%- include('./parts/_p-top-news') %>
+      </section><!-- /l- -->
 
-    <section class="l-content">
-        <%- include('./parts/_p-content') %>
-    </section>
+      <section class="l-top-content">
+        <%- include('./parts/_p-top-content') %>
+      </section>
 
-    <section class="l-works p-works">
+      <section class="l-top-works">
+        <%- include('./parts/_p-top-works', { img:'../images/common/business-policy-1.png', img_alt:'', }) %>
+      </section>
 
-    </section>
+      <section class="l-top-service">
+        <%- include('./parts/_p-top-service', { img:'../images/common/business-policy-1.png', img_alt:'', }) %>
+      </section>
 
+      <section class="l-top-blog p-top-blog">
+        <div class="p-top-blog__inner l-inner">
+          <div class="p-top-blog__contents">
+            <% for (var i=1; i <=3; i++) { %>
+              <%- include('./parts/_c-blog-card',{ link:'#', img:'./images/common/blog-img01.jpg', img__alt:'rectangle',
+                blog__title:'タイトルが入ります。タイトルが入ります。', blog__text:'説明文が入ります。説明文が入ります。説明文が入ります。', blog__category:'カテゴリ',
+                date1:'2021-07-20', date2:'2021.07.20' }) %>
+                <% } %>
+          </div><!-- /.blog__contents -->
+        </div>
+      </section>
 
-      <%- include('./parts/_c-btn',{text:'詳しく見る', link:'#'}) %>
-
-
-      <div class="p-section-title">
-        <%- include('./parts/_c-section-title__english',{text:'Blog'}) %>
-        <%- include('./parts/_c-section-title__blog',{text:'ブログ'}) %>
-      </div><!-- /p-section-title -->
-      <div class="p-section-title">
-        <%- include('./parts/_c-section-title__english',{text:'Overview'}) %>
-        <%- include('./parts/_c-section-title__overview',{text:'企業概要'}) %>
-      </div><!-- /p-section-title -->
-      <div class="p-section-title">
-        <%- include('./parts/_c-section-title__english',{text:'Works'}) %>
-        <%- include('./parts/_c-section-title__works',{text:'制作実績'}) %>
-      </div><!-- /p-section-title -->
-      <div class="p-section-title">
-        <%- include('./parts/_c-section-title__english',{text:'Content'}) %>
-        <%- include('./parts/_c-section-title__content',{text:'事業内容'}) %>
-      </div><!-- /p-section-title -->
-   
-      <%- include('./parts/_c-text',{text:'テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。'}) %>
-
-    <div class="p-blog__contents">
-      <% for (var i=1; i <= 3; i++) { %> 
-        <%- include('./parts/_c-blog-card',{
-        link:'#',
-        img:'./images/common/blog-img01.jpg',
-        img__alt:'rectangle',
-        blog__title:'タイトルが入ります。タイトルが入ります。',
-        blog__text:'説明文が入ります。説明文が入ります。説明文が入ります。',
-        blog__category:'カテゴリ',
-        date1:'2021-07-20',
-        date2:'2021.07.20'
-      }) %> 
-    <% } %> 
-  </div><!-- /.blog__contents -->
-
-  <%- include('./common/_contact') %>
+      <%- include('./common/_contact') %>
 
 
+        <%- include('./common/_footer') %>
 
-  <%- include('./common/_footer') %>
 
-    
   </body>
+
 </html>

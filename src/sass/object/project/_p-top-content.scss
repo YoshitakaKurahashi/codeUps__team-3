@@ -1,4 +1,4 @@
-.p-content__inner {
+.p-top-content__inner {
   margin: 0 auto;
   width: 100%;
   height: inherit;
@@ -11,18 +11,18 @@
   }
 }
 
-.p-content__title {
+.p-top-content__title {
   text-align: center;
 }
 
-.p-content__title .c-section-title-bg {
+.p-top-content__title .c-section-title-bg {
   margin-top: rem(-63);
   @include mq(tab) {
     text-align: left;
   }
 }
 
-.p-content__cards {
+.p-top-content__cards {
   margin-top: rem(66);
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +32,7 @@
   }
 }
 
-.p-content__card {
+.p-top-content__card {
   width: calc(100% * 1 / 2);
   z-index: 2;
   position: relative;
@@ -50,7 +50,7 @@
   }
 }
 
-.p-content__card-image {
+.p-top-content__card-image {
   position: relative;
   @include mq(tab) {
     width: 100%;
@@ -59,14 +59,14 @@
   }
 }
 
-.p-content__card-image:hover {
+.p-top-content__card-image:hover {
   @include mq(tab) {
     opacity: 0.6;
     transition-duration: 0.3s;
   }
 }
 
-.p-content__card-image::before {
+.p-top-content__card-image::before {
   content: "";
   display: block;
   padding-top: 89.3617%;
@@ -75,7 +75,7 @@
   }
 }
 
-.p-content__card-image::after {
+.p-top-content__card-image::after {
   background-color: #000;
   z-index: 1;
   content: "";
@@ -88,7 +88,7 @@
   opacity: 0.5;
 }
 
-.p-content__card-image img {
+.p-top-content__card-image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -98,7 +98,7 @@
   object-position: center;
 }
 
-.p-content__card-title {
+.p-top-content__card-title {
   position: absolute;
   top: 50%;
   left: 50%;
