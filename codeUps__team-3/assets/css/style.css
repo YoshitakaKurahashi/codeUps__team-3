@@ -626,6 +626,16 @@ summary {
 	width: 100%;
 }
 
+.l-portfolio-card {
+	margin: auto;
+	max-width: 33.75rem;
+	width: 100%;
+}
+
+.l-portfolio-card:not(:last-child) {
+	margin-bottom: 1.5rem;
+}
+
 .l-top-blog {
 	margin-top: 6.3125rem;
 }
@@ -648,16 +658,6 @@ summary {
 
 .l-top-works {
 	margin-top: 7.8125rem;
-
-.l-portfolio-card {
-	margin: auto;
-	max-width: 33.75rem;
-	width: 100%;
-}
-
-.l-portfolio-card:not(:last-child) {
-	margin-bottom: 1.5rem;
-
 }
 
 .c-blog-card {
@@ -1153,7 +1153,6 @@ summary {
 	width: 100%;
 }
 
-
 .c-portfolio-card {
 	display: block;
 	margin-left: calc(50% - 50vw);
@@ -1210,37 +1209,6 @@ summary {
 	top: 0;
 	z-index: 10;
 }
-
-.c-section-title__blog {
-	bottom: 0;
-	font-size: 1.25rem;
-	font-weight: 400;
-	left: 50%;
-	letter-spacing: 0.125rem;
-	position: absolute;
-	transform: translateX(-50%);
-}
-
-.c-section-title__contact {
-	bottom: 0;
-	font-size: 1.25rem;
-	font-weight: 400;
-	left: 50%;
-	letter-spacing: 0.125rem;
-	position: absolute;
-	transform: translateX(-50%);
-}
-
-.c-section-title__content {
-	bottom: 0;
-	font-size: 1.25rem;
-	font-weight: 400;
-	left: 50%;
-	letter-spacing: 0.125rem;
-	position: absolute;
-	transform: translateX(-50%);
-}
-
 
 .c-section-title__english {
 	color: #F9F871;
@@ -1751,7 +1719,6 @@ summary {
 	position: relative;
 }
 
-
 .p-portfolio-mainvisual {
 	background: url(/images/common/portfolioPage-MV.png) center center/cover;
 	background-repeat: no-repeat;
@@ -1770,12 +1737,6 @@ summary {
 .p-portfolio-under__contents {
 	margin-bottom: 5.1875rem;
 }
-
-.p-section-title__left {
-	margin-right: auto;
-	text-align: left;
-}
-
 
 .p-section-title {
 	margin: auto;
@@ -2508,21 +2469,10 @@ html {
 	color: #F9F871;
 	cursor: pointer;
 	transition: .3s;
+}
 
 .c-portfolio-card {
 	margin: 0;
-}
-
-.c-section-title__blog {
-	font-size: 1.875rem;
-}
-
-.c-section-title__contact {
-	font-size: 1.875rem;
-}
-
-.c-section-title__content {
-	font-size: 1.875rem;
 }
 
 .c-section-title__english {
