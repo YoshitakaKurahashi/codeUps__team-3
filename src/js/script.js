@@ -51,7 +51,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // buger-menu
   $(function () {
-    $('.p-burger__btn').on('click',function(){
+    $('.p-burger__btn').on('click', function () {
       $('.p-burger__btn').toggleClass('close');
       $('.p-header__burger-menu').toggleClass('fade');
       $('body').toggleClass('noscroll'); // 追記
@@ -60,6 +60,51 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // header固定
   var _window = $(window),
+
+    _header = $('.p-top-header'),
+    heroBottom;
+
+  _window.on('scroll', function () {
+    heroBottom = $('.mainvisual').height();
+    if (_window.scrollTop() > heroBottom) {
+      _header.addClass('transform');
+    }
+    else {
+      _header.removeClass('transform');
+    }
+  });
+
+  _window.trigger('scroll');
+
+
+  //メインビジュアル画像ズーム
+
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    effect: 'fade',
+    effect: "fade", //フェードの指定
+    autoplay: {
+      delay: 4000, //４秒後に次のスライドへ
+      disableOnInteraction: false //ユーザー側で操作してもスライドを止めない
+    },
+    speed: 2000, //２秒かけてフェードで切り替わる
+    allowTouchMove: false,//マウスでのスワイプを禁止
+
+  });
+
+
+  //トップページworksのswiperを制御
+  var swiper1 = new Swiper ('.swiper1', {
+    effect: 'slide',
+    autoplay: {
+      delay: 2000,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination"
+    },
+  });
+
       _header = $('.p-top-header'),
       heroBottom;
 
@@ -90,5 +135,6 @@ speed: 2000, //２秒かけてフェードで切り替わる
 allowTouchMove: false,//マウスでのスワイプを禁止
   
 });
+
 
 });

@@ -1,0 +1,13 @@
+.c-section-title-bg {
+    font-size: rem(50);
+    letter-spacing: rem(2);
+    color: #F9F871;
+    opacity: 0.2;
+    font-family: "Noto Serif JP";
+    font-weight: 400;
+    line-height: 1;
+    @include mq(tab) {
+      font-size: rem(110);
+      line-height: .9;
+    }
+}

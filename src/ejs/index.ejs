@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('./common/_head') %>
+
   <body>
 
-    <%- include('./mv_yuichi') %>
+
+    <%- include('./common/_top-header') %>
 
     <%- include('./top-news_yuichi') %>
 
@@ -11,7 +13,21 @@
 
     
 
-      <%- include('./parts/_c-btn',{text:'詳しく見る', link:'#'}) %>
+
+      <%- include('./mv_yuichi') %>
+
+
+        <section class="l-top-news">
+          <%- include('./parts/_p-top-news') %>
+        </section><!-- /l- -->
+
+        <section class="l-top-content">
+          <%- include('./parts/_p-top-content') %>
+        </section>
+
+        <section class="l-top-works">
+          <%- include('./parts/_p-top-works', { img:'../images/common/img_top-works1.jpg', img_alt:'', }) %>
+        </section>
 
     
       
@@ -33,12 +49,23 @@
     <% } %> 
   </div><!-- /.blog__contents -->
 
-  <%- include('./common/_contact') %>
 
+        <section class="l-top-service">
+          <%- include('./parts/_p-top-service', { img:'../images/common/img_top-service.jpg', img_alt:'', }) %>
+        </section>
 
+        <section class="l-top-blog">
+          <%- include('./parts/_p-top-blog') %>
+        </section>
 
-  <%- include('./common/_footer') %>
+        <section class="l-top-contact">
+          <%- include('./common/_contact') %>
+        </section>
 
-    
+        <footer>
+          <%- include('./common/_footer') %>
+        </footer>
+
   </body>
+
 </html>
