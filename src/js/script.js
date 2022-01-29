@@ -25,10 +25,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // ヘッダー
   $(window).on('scroll', function () {
-    if ($('.slider1').height() < $(this).scrollTop()) {
-      $('.header').css('background', 'rgba(17,17,17,1)');
+    if ($('.mainviusal').height() < $(this).scrollTop()) {
+      $('.p-top-header').css('background', 'rgba(17,17,17,1)');
     } else {
-      $('.header').css('background', 'rgba(17,17,17,0.5)');
+      $('.p-top-header').css('background', 'rgba(17,17,17,0.5)');
     }
   });
 
@@ -60,6 +60,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // header固定
   var _window = $(window),
+
     _header = $('.p-top-header'),
     heroBottom;
 
@@ -103,5 +104,37 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       el: ".swiper-pagination"
     },
   });
+
+      _header = $('.p-top-header'),
+      heroBottom;
+
+      _window.on('scroll',function(){
+        heroBottom = $('.c-underpage-mainvisual').height();
+        if(_window.scrollTop() > heroBottom){
+            _header.addClass('transform');   
+        }
+        else{
+            _header.removeClass('transform');   
+        }
+      });
+ 
+      _window.trigger('scroll');
+
+
+//メインビジュアル画像ズーム
+
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  effect: 'fade',
+  effect: "fade", //フェードの指定
+autoplay: {
+  delay: 4000, //４秒後に次のスライドへ
+  disableOnInteraction: false //ユーザー側で操作してもスライドを止めない
+},
+speed: 2000, //２秒かけてフェードで切り替わる
+allowTouchMove: false,//マウスでのスワイプを禁止
+  
+});
+
 
 });

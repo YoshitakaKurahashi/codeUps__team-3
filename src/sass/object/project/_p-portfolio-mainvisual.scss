@@ -1,0 +1,9 @@
+.p-portfolio-mainvisual {
+  background: url(/images/common/portfolioPage-MV.png) center center / cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+  @include mq(tab) {
+    background: url(/images/common/portfolioPage-MVPC.png) center center / cover;
+  }
+}

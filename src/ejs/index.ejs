@@ -4,9 +4,18 @@
 
   <body>
 
+
     <%- include('./common/_top-header') %>
 
+    <%- include('./top-news_yuichi') %>
+
+    <%- include('./top-content_yuichi') %>
+
+    
+
+
       <%- include('./mv_yuichi') %>
+
 
         <section class="l-top-news">
           <%- include('./parts/_p-top-news') %>
@@ -19,6 +28,27 @@
         <section class="l-top-works">
           <%- include('./parts/_p-top-works', { img:'../images/common/img_top-works1.jpg', img_alt:'', }) %>
         </section>
+
+    
+      
+      
+      
+      
+    <div class="p-blog__contents">
+      <% for (var i=1; i <= 3; i++) { %> 
+        <%- include('./parts/_c-blog-card',{
+        link:'#',
+        img:'./images/common/blog-img01.jpg',
+        img__alt:'rectangle',
+        blog__title:'タイトルが入ります。タイトルが入ります。',
+        blog__text:'説明文が入ります。説明文が入ります。説明文が入ります。',
+        blog__category:'カテゴリ',
+        date1:'2021-07-20',
+        date2:'2021.07.20'
+      }) %> 
+    <% } %> 
+  </div><!-- /.blog__contents -->
+
 
         <section class="l-top-service">
           <%- include('./parts/_p-top-service', { img:'../images/common/img_top-service.jpg', img_alt:'', }) %>
