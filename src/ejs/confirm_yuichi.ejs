@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+  <body>
+    <%- include('./common/_top-header') %>
+
+<section class="l-comfirm p-confirm">
+    <div class="p-confirm__inner l-inner">
+      <div class="p-confirm__container">
+        <div class="p-confirm__text">
+          <p>お問い合わせ完了</p>
+        </div><!-- /confirm__title -->
+        <div class="p-confirm__text">
+          <p>3営業日以内に<br class="p-confirm__sp">返信させて頂きます。</p>
+        </div><!-- /confirm__text -->
+        <div class="btn p-confirm__btn">
+            <%- include('./parts/_c-btn',{text:'TOPへ', link:'index.html'}) %>
+        </div><!-- /works__button -->
+      </div><!-- /confirm__container -->
+    </div><!-- /confirm__inner -->
+  </section><!-- /confirm -->
+
+  <%- include('./common/_footer') %>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.p-confirm__text {
+    font-size: rem(20);
+    letter-spacing: rem(2);
+    text-align: center;
+    margin-top: rem(70);
+
+    @include mq(tab) {
+        font-size: rem(30)
+    }
+}
+
+.p-confirm__sp {
+    @include mq(tab) {
+        display: none
+    }
+}
+
+
+
+.p-confirm__btn {
+    margin-top: rem(80);
+}
+
+.p-confirm__btn {
+    font-size: rem(20);
+
+    @include mq(tab) {
+        font-size: rem(16);
+    }
+}

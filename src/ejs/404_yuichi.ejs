@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+  <body>
+    <%- include('./common/_top-header') %>
+
+<section class="p-error">
+    <div class="p-error__inner l-inner">
+      <div class="p-error__container">
+        <div class="p-error__title">
+          <p>404 Not Found</p>
+        </div><!-- /confirm__title -->
+        <div class="p-error__text">
+          <p>お探しのページは<br class="p-error__sp">見つかりませんでした</p>
+        </div><!-- /confirm__text -->
+        <div class="btn p-error__btn">
+            <%- include('./parts/_c-btn',{text:'TOPへ', link:'index.html'}) %>
+        </div><!-- /works__button -->
+      </div><!-- /confirm__container -->
+    </div><!-- /confirm__inner -->
+  </section><!-- /confirm -->
+
+  <%- include('./common/_footer') %>
+
+</body>
+
+</html>

@@ -2,41 +2,24 @@
 <html lang="ja">
 <%- include('./common/_head') %>
   <body>
+    <%- include('./common/_top-header') %>
 
     <%- include('./parts/_c-breadcrumbs',{text:'お知らせ一覧'}) %>
 
-    <section class="l-news-news p-news">
+    <section class="l-news-archive p-news-archive">
       <div class="p-news__inner l-inner">
-        <div class="l-news__container p-news__container">
-            <%- include('./common/_news-contents') %>
-        </div><!-- /p-news__container -->
-        <div class="l-news__container p-news__container">
-            <%- include('./common/_news-contents') %>
-        </div><!-- /p-news__container -->
-        <div class="l-news__container p-news__container">
-            <%- include('./common/_news-contents') %>
-        </div><!-- /p-news__container -->
-        <div class="l-news__container p-news__container">
-            <%- include('./common/_news-contents') %>
-        </div><!-- /p-news__container -->
-        <div class="l-news__container p-news__container">
-            <%- include('./common/_news-contents') %>
-        </div><!-- /p-news__container -->
-        <div class="l-news__container p-news__container">
-            <%- include('./common/_news-contents') %>
-        </div><!-- /p-news__container -->
-        <div class="l-news__container p-news__container">
-            <%- include('./common/_news-contents') %>
-        </div><!-- /p-news__container -->
-        <div class="l-news__container p-news__container">
-            <%- include('./common/_news-contents') %>
-        </div><!-- /p-news__container -->
-        <div class="l-news__container p-news__container">
-            <%- include('./common/_news-contents') %>
-        </div><!-- /p-news__container -->
-        <div class="l-news__container p-news__container">
-            <%- include('./common/_news-contents') %>
-        </div><!-- /p-news__container -->
+        
+        <% for (var i=1; i <= 10; i++) { %> 
+            <div class="p-news__container">
+                <%- include('./common/_news-contents') %>
+            </div>
+        <% } %>
+
+
+        <div class="p-news__pagination">
+            <%- include('./parts/_c-pagination') %>
+        </div><!-- /p-news__pagination -->
+        
       </div><!-- /l-news -->
     </section><!-- /l- -->
 
