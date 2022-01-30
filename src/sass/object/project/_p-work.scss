@@ -1,0 +1,31 @@
+.p-work__title {
+  font-size: rem(20);
+  letter-spacing: 0.4px;
+  line-height: 1;
+}
+
+.p-work__info {
+  display: flex;
+  align-items: center;
+  margin-top: rem(31);
+}
+
+.p-work__date {
+  margin-right: rem(30);
+}
+
+.p-work__date .c-news-date {
+  letter-spacing: 0.4px;
+}
+
+.p-work__tag .c-news-tag {
+  font-size: rem(16);
+  letter-spacing: 0.16em;
+  padding: 0.3125rem rem(20);
+}
+
+.p-work__slider {
+  width: 100%;
+  overflow: hidden;
+  margin-top: rem(24);
+}

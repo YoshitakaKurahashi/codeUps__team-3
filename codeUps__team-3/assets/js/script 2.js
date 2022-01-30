@@ -64,7 +64,7 @@ jQuery(function ($) {
       heroBottom;
 
   _window.on('scroll', function () {
-    heroBottom = $('.mainvisual').height();
+    heroBottom = $('.c-underpage-mainvisual').height();
 
     if (_window.scrollTop() > heroBottom) {
       _header.addClass('transform');
@@ -95,31 +95,5 @@ jQuery(function ($) {
     pagination: {
       el: ".swiper-pagination"
     }
-  }); //制作実績詳細ページのswiperを制御
-  //サムネイル
-
-  var thumbs = new Swiper('.gallery-thumbs', {
-    slidesPerView: 2.1,
-    spaceBetween: 24,
-    centeredSlides: true,
-    loop: true,
-    slideToClickedSlide: true
-  }); //メイン
-
-  var slider = new Swiper('.gallery-slider', {
-    slidesPerView: 1,
-    centeredSlides: true,
-    loop: true,
-    loopedSlides: 8,
-    //スライドの枚数と同じ値を指定
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    } // thumbs: {
-    //   swiper: thumbs
-    // }
-
   });
-  slider.controller.control = thumbs;
-  thumbs.controller.control = slider;
 });

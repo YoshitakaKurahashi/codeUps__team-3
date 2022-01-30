@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+
+  <body>
+
+    <%- include('./common/_top-header') %>
+
+      <div class="l-work-breadcrumbs">
+        <div class="breadcrumbs">
+          <ul>
+            <li><a href="">トップ</a></li>
+            <span>></span>
+            <li><a href="">制作実績</a></li>
+            <span>></span>
+            <li><a href="">制作実績詳細</a></li>
+          </ul>
+        </div><!-- /.breadcrumbs -->
+      </div>
+
+      <div class="l-work p-work">
+        <div class="p-work__inner l-inner">
+          <h3 class="p-work__title">〇〇株式会社　制作実績</h3>
+          <div class="p-work__info">
+            <div class="p-work__date">
+              <%- include('./parts/_c-news-date',{text:'2020/06/13'}) %>
+            </div>
+            <div class="p-work__tag">
+              <%- include('./parts/_c-news-tag',{text:'カテゴリ1'}) %>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-work__slider">
+          <%- include('./parts/_p-work-slider') %>
+        </div>
+      </div>
+
+  </body>
+
+</html>
