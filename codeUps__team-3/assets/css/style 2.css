@@ -626,16 +626,6 @@ summary {
 	width: 100%;
 }
 
-.l-portfolio-card {
-	margin: auto;
-	max-width: 33.75rem;
-	width: 100%;
-}
-
-.l-portfolio-card:not(:last-child) {
-	margin-bottom: 1.5rem;
-}
-
 .l-top-blog {
 	margin-top: 6.3125rem;
 }
@@ -658,15 +648,16 @@ summary {
 
 .l-top-works {
 	margin-top: 7.8125rem;
+
+.l-portfolio-card {
+	margin: auto;
+	max-width: 33.75rem;
+	width: 100%;
 }
 
-.l-work-breadcrumbs {
-	margin-left: 1.25rem;
-	margin-top: 4.0625rem;
-}
+.l-portfolio-card:not(:last-child) {
+	margin-bottom: 1.5rem;
 
-.l-work {
-	margin-top: 3.5rem;
 }
 
 .c-blog-card {
@@ -1162,6 +1153,7 @@ summary {
 	width: 100%;
 }
 
+
 .c-portfolio-card {
 	display: block;
 	margin-left: calc(50% - 50vw);
@@ -1218,6 +1210,37 @@ summary {
 	top: 0;
 	z-index: 10;
 }
+
+.c-section-title__blog {
+	bottom: 0;
+	font-size: 1.25rem;
+	font-weight: 400;
+	left: 50%;
+	letter-spacing: 0.125rem;
+	position: absolute;
+	transform: translateX(-50%);
+}
+
+.c-section-title__contact {
+	bottom: 0;
+	font-size: 1.25rem;
+	font-weight: 400;
+	left: 50%;
+	letter-spacing: 0.125rem;
+	position: absolute;
+	transform: translateX(-50%);
+}
+
+.c-section-title__content {
+	bottom: 0;
+	font-size: 1.25rem;
+	font-weight: 400;
+	left: 50%;
+	letter-spacing: 0.125rem;
+	position: absolute;
+	transform: translateX(-50%);
+}
+
 
 .c-section-title__english {
 	color: #F9F871;
@@ -1728,6 +1751,7 @@ summary {
 	position: relative;
 }
 
+
 .p-portfolio-mainvisual {
 	background: url(/images/common/portfolioPage-MV.png) center center/cover;
 	background-repeat: no-repeat;
@@ -1746,6 +1770,12 @@ summary {
 .p-portfolio-under__contents {
 	margin-bottom: 5.1875rem;
 }
+
+.p-section-title__left {
+	margin-right: auto;
+	text-align: left;
+}
+
 
 .p-section-title {
 	margin: auto;
@@ -2128,121 +2158,6 @@ summary {
 	margin-top: 1.5625rem;
 }
 
-.p-work-slider { /* 次ページボタンのスタイル */ /* 前ページボタンのスタイル */
-}
-
-.p-work-slider .gallery-slider {
-	height: auto;
-	width: 100%;
-}
-
-.p-work-slider .gallery-slider .swiper-slide {
-	position: relative;
-	width: 100%;
-}
-
-.p-work-slider .gallery-slider .swiper-slide::before {
-	content: "";
-	display: block;
-	padding-top: 67.2463%;
-}
-
-.p-work-slider .gallery-slider .swiper-slide img {
-	-o-object-fit: cover;
-	-o-object-position: center;
-	height: 100%;
-	left: 50%;
-	object-fit: cover;
-	object-position: center;
-	position: absolute;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-}
-
-.p-work-slider .gallery-thumbs {
-	margin-top: 2rem;
-	overflow: hidden;
-	padding: 0;
-	width: 100%;
-}
-
-.p-work-slider .gallery-thumbs .swiper-slide::before {
-	content: "";
-	display: block;
-	padding-top: 100%;
-}
-
-.p-work-slider .gallery-thumbs .swiper-slide img {
-	-o-object-fit: cover;
-	-o-object-position: center;
-	height: 100%;
-	left: 50%;
-	object-fit: cover;
-	object-position: center;
-	position: absolute;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-}
-
-.p-work-slider .swiper-button-prev,
-.p-work-slider .swiper-button-next { /* ボタンの高さ */
-	background-color: #000;
-	border-radius: 50%; /* ボタンの幅 */
-	height: 1.875rem !important;
-	margin-top: -24px;
-	width: 1.875rem !important; /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
-}
-
-.p-work-slider .swiper-button-next::after {
-	border-right: 2px solid #ffea2e;
-	border-top: 2px solid #ffea2e;
-	height: 0.6875rem;
-	transform: rotate(45deg) translate(-0.125rem, 0rem);
-	width: 0.6875rem;
-}
-
-.p-work-slider .swiper-button-prev::after {
-	border-right: 2px solid #ffea2e;
-	border-top: 2px solid #ffea2e;
-	height: 0.6875rem;
-	transform: rotate(-135deg) translate(0rem, 0.0625rem);
-	width: 0.6875rem;
-}
-
-.p-work__title {
-	font-size: 1.25rem;
-	letter-spacing: 0.4px;
-	line-height: 1;
-}
-
-.p-work__info {
-	align-items: center;
-	display: flex;
-	margin-top: 1.9375rem;
-}
-
-.p-work__date {
-	margin-right: 1.875rem;
-}
-
-.p-work__date .c-news-date {
-	letter-spacing: 0.4px;
-}
-
-.p-work__tag .c-news-tag {
-	font-size: 1rem;
-	letter-spacing: 0.16em;
-	padding: 0.3125rem 1.25rem;
-}
-
-.p-work__slider {
-	margin-top: 1.5rem;
-	overflow: hidden;
-	width: 100%;
-}
-
 .test {
 	font-size: 1.0rem;
 }
@@ -2593,10 +2508,21 @@ html {
 	color: #F9F871;
 	cursor: pointer;
 	transition: .3s;
-}
 
 .c-portfolio-card {
 	margin: 0;
+}
+
+.c-section-title__blog {
+	font-size: 1.875rem;
+}
+
+.c-section-title__contact {
+	font-size: 1.875rem;
+}
+
+.c-section-title__content {
+	font-size: 1.875rem;
 }
 
 .c-section-title__english {

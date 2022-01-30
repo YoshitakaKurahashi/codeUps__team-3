@@ -94,7 +94,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
   //トップページworksのswiperを制御
-  var swiper1 = new Swiper ('.swiper1', {
+  var swiper1 = new Swiper('.swiper1', {
     effect: 'slide',
     autoplay: {
       delay: 2000,
@@ -105,36 +105,32 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     },
   });
 
-      _header = $('.p-top-header'),
-      heroBottom;
+  //制作実績詳細ページのswiperを制御
+  //サムネイル
+  var thumbs = new Swiper('.gallery-thumbs', {
+    slidesPerView: 2.1,
+    spaceBetween: 24,
+    centeredSlides: true,
+    loop: true,
+    slideToClickedSlide: true,
+  });
+  //メイン
+  var slider = new Swiper('.gallery-slider', {
+    slidesPerView: 1,
+    centeredSlides: true,
+    loop: true,
+    loopedSlides: 8, //スライドの枚数と同じ値を指定
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    // thumbs: {
+    //   swiper: thumbs
+    // }
+  });
+  slider.controller.control = thumbs;
+  thumbs.controller.control = slider;
 
-      _window.on('scroll',function(){
-        heroBottom = $('.c-underpage-mainvisual').height();
-        if(_window.scrollTop() > heroBottom){
-            _header.addClass('transform');   
-        }
-        else{
-            _header.removeClass('transform');   
-        }
-      });
- 
-      _window.trigger('scroll');
-
-
-//メインビジュアル画像ズーム
-
-var swiper = new Swiper(".mySwiper", {
-  loop: true,
-  effect: 'fade',
-  effect: "fade", //フェードの指定
-autoplay: {
-  delay: 4000, //４秒後に次のスライドへ
-  disableOnInteraction: false //ユーザー側で操作してもスライドを止めない
-},
-speed: 2000, //２秒かけてフェードで切り替わる
-allowTouchMove: false,//マウスでのスワイプを禁止
-  
-});
 
 
 });
