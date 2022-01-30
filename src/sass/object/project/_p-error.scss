@@ -1,0 +1,41 @@
+.p-error {
+    margin-top: rem(130);
+    margin-bottom: rem(120);
+
+    @include mq(tab) {
+        margin-top: rem(200);
+        margin-bottom: rem(150);
+    }
+}
+
+
+.p-error__text {
+    font-size: rem(20);
+    letter-spacing: rem(2);
+    text-align: center;
+    margin-top: rem(70);
+
+    @include mq(tab) {
+        font-size: rem(30)
+    }
+}
+
+.p-error__sp {
+    @include mq(tab) {
+        display: none
+    }
+}
+
+
+
+.p-error__btn {
+    margin-top: rem(80);
+}
+
+.p-error__btn {
+    font-size: rem(20);
+
+    @include mq(tab) {
+        font-size: rem(16);
+    }
+}
