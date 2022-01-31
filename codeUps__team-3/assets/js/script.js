@@ -3,7 +3,7 @@
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 jQuery(function ($) {
-  var _Swiper, _Swiper2;
+  var _Swiper;
 
   // この中であればWordpressでも「$」が使用可能になる
   var topBtn = $('.page-top');
@@ -100,13 +100,23 @@ jQuery(function ($) {
 
   var thumbs = new Swiper('.gallery-thumbs', {
     slidesPerView: 2.1,
-    spaceBetween: 24,
+    spaceBetween: 27,
     centeredSlides: true,
     loop: true,
-    slideToClickedSlide: true
+    slideToClickedSlide: true,
+    breakpoints: {
+      765: {
+        slidesPerView: 8,
+        spaceBetween: 8,
+        centeredSlides: false
+      }
+    }
   }); //メイン
 
   var slider = new Swiper('.gallery-slider', {
+    autoplay: {
+      delay: 2000
+    },
     slidesPerView: 1,
     centeredSlides: true,
     loop: true,
@@ -115,38 +125,8 @@ jQuery(function ($) {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
-    } // thumbs: {
-    //   swiper: thumbs
-    // }
-
-  });
-
-  _header = $('.p-top-header'), heroBottom;
-
-  _window.on('scroll', function () {
-    heroBottom = $('.c-underpage-mainvisual').height();
-
-    if (_window.scrollTop() > heroBottom) {
-      _header.addClass('transform');
-    } else {
-      _header.removeClass('transform');
     }
   });
-
-  _window.trigger('scroll'); //メインビジュアル画像ズーム
-
-
-  var swiper = new Swiper(".mySwiper", (_Swiper2 = {
-    loop: true,
-    effect: 'fade'
-  }, _defineProperty(_Swiper2, "effect", "fade"), _defineProperty(_Swiper2, "autoplay", {
-    delay: 4000,
-    //４秒後に次のスライドへ
-    disableOnInteraction: false //ユーザー側で操作してもスライドを止めない
-
-  }), _defineProperty(_Swiper2, "speed", 2000), _defineProperty(_Swiper2, "allowTouchMove", false), _Swiper2));
-=======
   slider.controller.control = thumbs;
   thumbs.controller.control = slider;
-
 });

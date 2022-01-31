@@ -1,4 +1,6 @@
 .p-work-slider {
+  position: relative;
+
   //メイン
   .gallery-slider {
     width: 100%;
@@ -13,6 +15,9 @@
       content: "";
       display: block;
       padding-top: 67.2463%; //高さ/幅*100
+      @include mq(tab) {
+        padding-top: 53.375%;
+      }
     }
 
     .swiper-slide img {
@@ -33,6 +38,9 @@
     width: 100%;
     padding: 0;
     overflow: hidden;
+    @include mq(tab) {
+      margin-top: rem(41);
+    }
 
     .swiper-slide::before {
       content: "";
@@ -54,11 +62,17 @@
 
   .swiper-button-prev,
   .swiper-button-next {
-    width: rem(30) !important; /* ボタンの幅 */
-    height: rem(30) !important; /* ボタンの高さ */
+    width: rem(30) !important;
+    height: rem(30) !important;
     background-color: #000;
     border-radius: 50%;
-    margin-top: -24px; /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
+    margin-top: -24px;
+    top: 30%;
+    @include mq(tab) {
+      width: rem(50) !important;
+      height: rem(50) !important;
+      top: 38%;
+    }
   }
   /* 次ページボタンのスタイル */
   .swiper-button-next::after {
@@ -67,6 +81,11 @@
     border-top: 2px solid #ffea2e;
     border-right: 2px solid #ffea2e;
     transform: rotate(45deg) translate(rem(-2), rem(0));
+    @include mq(tab) {
+      width: rem(20);
+      height: rem(20);
+      transform: rotate(45deg) translate(rem(-3), rem(3));
+    }
   }
   /* 前ページボタンのスタイル */
   .swiper-button-prev::after {
@@ -75,5 +94,10 @@
     border-top: 2px solid #ffea2e;
     border-right: 2px solid #ffea2e;
     transform: rotate(-135deg) translate(rem(0), rem(1));
+    @include mq(tab) {
+      width: rem(20);
+      height: rem(20);
+      transform: rotate(-135deg) translate(rem(-3), rem(3));
+    }
   }
 }
