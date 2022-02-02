@@ -1,21 +1,43 @@
+.p-work__inner {
+  margin: 0 auto;
+  max-width: rem(540); //状況によって変える必要があるかも
+  width: 100%;
+  height: inherit;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  @include mq(tab) {
+    max-width: rem(850);
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}
+
 .p-work__title {
   font-size: rem(20);
   letter-spacing: 0.4px;
   line-height: 1;
+  @include mq(tab) {
+    font-size: rem(23);
+  }
 }
 
 .p-work__info {
   display: flex;
   align-items: center;
   margin-top: rem(31);
+  @include mq(tab) {
+    margin-top: rem(44);
+  }
 }
 
 .p-work__date {
   margin-right: rem(30);
+  font-size: rem(16);
 }
 
 .p-work__date .c-news-date {
   letter-spacing: 0.4px;
+  font-size: rem(16);
 }
 
 .p-work__tag .c-news-tag {
@@ -28,4 +50,31 @@
   width: 100%;
   overflow: hidden;
   margin-top: rem(24);
+  @include mq(tab) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: rem(800);
+    margin-top: rem(40);
+  }
+}
+
+.p-work__box {
+  margin-top: rem(50);
+  @include mq(tab) {
+    margin-top: rem(100);
+  }
+}
+
+.p-work__psgination {
+  margin-top: rem(80);
+  @include mq(tab) {
+    margin-top: rem(101);
+  }
+}
+
+.p-work__relation {
+  margin-top: rem(117);
+  @include mq(tab) {
+    margin-top: rem(103);
+  }
 }
