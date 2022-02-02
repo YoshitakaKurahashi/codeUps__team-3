@@ -3181,7 +3181,6 @@ html {
 }
 
 .p-top-blog__contents {
-	align-items: center;
 	display: flex;
 	margin-top: initial;
 }
