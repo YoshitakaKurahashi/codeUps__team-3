@@ -1786,6 +1786,12 @@ summary {
 	position: relative;
 }
 
+.p-news-mainvisual {
+	background: url(/images/common/news-mv-sp.jpg) center center/cover;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
 .p-portfolio-mainvisual {
 	background: url(/images/common/portfolioPage-MV.png) center center/cover;
 	background-repeat: no-repeat;
@@ -3087,6 +3093,10 @@ html {
 .p-news__contents {
 	display: flex;
 	position: static;
+}
+
+.p-news-mainvisual {
+	background: url(/images/common/news-mv-pc.jpg) center center/cover;
 }
 
 .p-portfolio-mainvisual {
