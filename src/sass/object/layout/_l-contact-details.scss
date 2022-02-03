@@ -1,3 +1,7 @@
 .l-contact-details {
     margin-top: rem(83);
+
+    @include mq(tab) {
+        margin-bottom: rem(150);
+    }
 }

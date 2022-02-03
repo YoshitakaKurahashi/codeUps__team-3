@@ -131,7 +131,9 @@ jQuery(function ($) {
     // }
 
 
+
     }
+
 
   });
   slider.controller.control = thumbs;
