@@ -1,0 +1,44 @@
+.p-work-box {
+  border: 1px solid #fff;
+  position: relative;
+  color: #fff;
+  padding-top: rem(55);
+  padding-right: rem(10);
+  padding-left: rem(10);
+  padding-bottom: rem(32);
+  @include mq(tab) {
+    padding-top: rem(45);
+    padding-right: rem(20);
+    padding-left: rem(20);
+  }
+}
+
+.p-work-box:not(:first-child) {
+  margin-top: rem(54);
+  @include mq(tab) {
+    margin-top: rem(69);
+  }
+}
+
+.p-work-box__title {
+  font-size: rem(20);
+  background-color: #000;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  border: 1px solid #fff;
+  display: inline-block;
+  border-radius: rem(32);
+  padding: rem(12) rem(24);
+  position: absolute;
+  top: rem(-23);
+  left: rem(23);
+  @include mq(tab) {
+    left: rem(37);
+  }
+}
+
+.p-work-box__text {
+  font-size: rem(16);
+  letter-spacing: 0.4px;
+  line-height: 2.1875;
+}

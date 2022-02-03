@@ -24,7 +24,7 @@
 }
 
 .p-top-works__card {
-  margin-top: rem(66);
+  margin-top: rem(48);
   @include mq(tab) {
     padding-left: rem(90);
     margin-top: initial;
@@ -44,43 +44,21 @@
 }
 
 .swiper-pagination {
+  position: static!important;
+  line-height: 1;
   @include mq(tab) {
-    position: static!important;
+    margin-top: rem(8);
+    padding-right: rem(40);
   }
 }
 
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: initial!important;
+.swiper-pagination-bullet {
+  margin: 0 rem(6)!important;
 }
 
-// .p-top-works__img {
-// 	width: 100%;
-// 	position: relative;
-//   @include mq(tab) {
-//     max-width: rem(557);
-//     margin-right: rem(-263);
-//   }
-// }
-
-// .p-top-works__img::before {
-// 	content: "";
-// 	display: block;
-// 	padding-top: 69.6%;
-//   @include mq(tab) {
-//     padding-top: 69.83842%;
-//   }
-// }
-
-// .p-top-works__img img {
-// 	position: absolute;
-// 	top: 50%;
-// 	left: 50%;
-// 	transform: translate(-50%, -50%);
-// 	object-fit: cover;
-// 	width: 100%;
-// 	height: 100%;
-// 	object-position: center;
-// }
+.swiper-pagination-bullet-active {
+  background-color: #F9F871!important;
+}
 
 .p-top-works__body {
   background-color: $background-color;

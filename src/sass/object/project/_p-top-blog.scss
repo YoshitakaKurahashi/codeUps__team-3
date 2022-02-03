@@ -15,7 +15,7 @@
   margin-top: rem(82);
   @include mq(tab) {
     display: flex;
-    align-items: center;
+    // align-items: center;
     margin-top: initial;
   }
 }
