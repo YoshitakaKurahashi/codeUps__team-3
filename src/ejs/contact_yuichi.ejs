@@ -3,7 +3,17 @@
 <%- include('./common/_head') %>
   <body>
 
-    <%- include('./parts/_c-breadcrumbs',{text:'お問い合わせ'}) %>
+     <!-- header -->
+     <%- include('./common/_top-header') %> 
+
+    <!-- 下層ページのMV -->
+    <div class="p-contact-mainvisual mainviusal">
+        <%- include('./parts/_c-underpage-mainvisual', {title:'お問い合わせ'}) %> 
+    </div>
+
+    <div class="l-inner">
+        <%- include('./parts/_c-breadcrumbs',{text:'お問い合わせ'}) %>
+    </div><!-- /l-inner -->
 
     <section class="l-contact-details p-contact-details">
         <div class="p-contact-details__inner l-inner">

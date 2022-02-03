@@ -125,7 +125,14 @@ jQuery(function ($) {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
+
+    } // thumbs: {
+    //   swiper: thumbs
+    // }
+
+
     }
+
   });
   slider.controller.control = thumbs;
   thumbs.controller.control = slider;
