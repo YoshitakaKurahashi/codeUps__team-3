@@ -667,7 +667,6 @@ summary {
 
 .l-top-works {
 	margin-top: 7.8125rem;
-
 }
 
 .l-work-breadcrumbs {
@@ -1437,6 +1436,12 @@ summary {
 	padding: 1.25rem 0 2.5rem;
 }
 
+.p-contact-mainvisual {
+	background: url(/images/common/contact-mv-sp.png) center center/cover;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
 .p-content__inner {
 	position: relative;
 }
@@ -1825,8 +1830,10 @@ summary {
 	letter-spacing: 0.125rem;
 	line-height: 2.7125rem;
 	position: absolute;
+	text-align: center;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	width: 100%;
 	z-index: 10;
 }
 
@@ -2799,6 +2806,10 @@ html {
 	max-width: 44.6875rem;
 	padding: 0.9375rem 0 3.75rem;
 	width: 100%;
+}
+
+.p-contact-mainvisual {
+	background: url(/images/common/contact-mv-pc.png) center center/cover;
 }
 
 .p-content__inner::after {

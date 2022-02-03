@@ -24,3 +24,13 @@
         padding: rem(15) 0 rem(60);
     }
 }
+
+.p-contact-mainvisual {
+    background: url(/images/common/contact-mv-sp.png) center center / cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+  
+    @include mq(tab) {
+      background: url(/images/common/contact-mv-pc.png) center center / cover;
+    }
+  }
