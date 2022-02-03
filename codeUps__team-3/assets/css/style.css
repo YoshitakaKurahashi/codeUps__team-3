@@ -667,7 +667,6 @@ summary {
 
 .l-top-works {
 	margin-top: 7.8125rem;
-
 }
 
 .l-work-breadcrumbs {
@@ -2352,6 +2351,10 @@ html {
 .l-comfirm {
 	margin-bottom: 9.375rem;
 	margin-top: 9.375rem;
+}
+
+.l-contact-details {
+	margin-bottom: 9.375rem;
 }
 
 .l-contact {
