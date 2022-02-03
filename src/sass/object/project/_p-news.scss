@@ -54,3 +54,13 @@
         
     }
 }
+
+.p-news-mainvisual {
+    background: url(/images/common/news-mv-sp.jpg) center center / cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    @include mq(tab) {
+        background: url(/images/common/news-mv-pc.jpg) center center / cover;
+    }
+}

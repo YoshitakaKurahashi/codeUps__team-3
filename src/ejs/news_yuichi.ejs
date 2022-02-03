@@ -2,36 +2,33 @@
 <html lang="ja">
 <%- include('./common/_head') %>
   <body>
+    <!-- header -->
     <%- include('./common/_top-header') %>
 
-    <%- include('./parts/_c-breadcrumbs',{text:'お知らせ一覧'}) %>
+    <!-- 下層ページのMV -->
+    <div class="p-news-mainvisual mainviusal">
+      <%- include('./parts/_c-underpage-mainvisual', {title:'お知らせ'}) %> 
+    </div>
 
+    <!-- パンくずリスト -->
+    <div class="l-inner">
+      <%- include('./parts/_c-breadcrumbs',{text:'お知らせ一覧'}) %>
+    </div><!-- /l-inner -->
+    
     <section class="l-news-archive p-news-archive">
       <div class="p-news__inner l-inner">
-        
         <% for (var i=1; i <= 10; i++) { %> 
             <div class="p-news__container">
                 <%- include('./common/_news-contents') %>
             </div>
         <% } %>
-
-
         <div class="p-news__pagination">
             <%- include('./parts/_c-pagination') %>
         </div><!-- /p-news__pagination -->
-        
       </div><!-- /l-news -->
     </section><!-- /l- -->
 
-
-    
-      
-
-      
-
   <%- include('./common/_contact') %>
-
-
 
   <%- include('./common/_footer') %>
 

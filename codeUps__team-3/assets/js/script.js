@@ -100,13 +100,23 @@ jQuery(function ($) {
 
   var thumbs = new Swiper('.gallery-thumbs', {
     slidesPerView: 2.1,
-    spaceBetween: 24,
+    spaceBetween: 27,
     centeredSlides: true,
     loop: true,
-    slideToClickedSlide: true
+    slideToClickedSlide: true,
+    breakpoints: {
+      765: {
+        slidesPerView: 8,
+        spaceBetween: 8,
+        centeredSlides: false
+      }
+    }
   }); //メイン
 
   var slider = new Swiper('.gallery-slider', {
+    autoplay: {
+      delay: 2000
+    },
     slidesPerView: 1,
     centeredSlides: true,
     loop: true,
@@ -115,9 +125,13 @@ jQuery(function ($) {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
+
     } // thumbs: {
     //   swiper: thumbs
     // }
+
+
+    }
 
   });
   slider.controller.control = thumbs;
